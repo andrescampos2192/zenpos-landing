@@ -1,0 +1,15 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# Nunca versionar secretos (defensa en profundidad; aquí no debería haber ninguno)
+.env
+.env.*
+*.key
+*.pem
+
+# Deps locales por si alguien corre un server de preview
+node_modules/

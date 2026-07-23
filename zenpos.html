@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.className+=' js'</script>
+<title>ZenPos · El primer software con IA para tu negocio venezolano</title>
+<meta name="description" content="ZenPos es el primer POS venezolano con inteligencia artificial: escanea tus facturas de proveedor con una foto, sube tus pedidos de e-commerce con una captura y pregúntale a tu negocio en español. En bolívares y dólares. Un solo plan de $30/mes con todo incluido e IA, primer mes gratis.">
+<link rel="icon" type="image/png" href="zenpos-iso.png">
+<meta name="google-site-verification" content="7A7v_raN6ymHx_1NmLOYWqeJCcrikAWYVYDDerzobQ0">
+<link rel="canonical" href="https://zentrixsoftware.com/zenpos.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Zentrix Software">
+<meta name="theme-color" content="#06110C">
+<meta name="keywords" content="POS con inteligencia artificial, IA para negocios Venezuela, escáner de facturas con foto, punto de venta venezolano, sistema de ventas bolívares y dólares, tasa BCV automática, software para negocios Venezuela, inventario, control de caja, recetas, agua y granel, licorería, talleres">
+
+<!-- Open Graph (WhatsApp / Facebook / Instagram link preview) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZenPos">
+<meta property="og:locale" content="es_VE">
+<meta property="og:url" content="https://zentrixsoftware.com/zenpos.html">
+<meta property="og:title" content="ZenPos · El primer software con IA para tu negocio venezolano">
+<meta property="og:description" content="Escanea tus facturas con una foto, sube tus pedidos de e-commerce con una captura y pregúntale a tu negocio en español. En Bs y $. Todo incluido + IA · $30/mes · Primer mes gratis.">
+<meta property="og:image" content="https://zentrixsoftware.com/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ZenPos · el primer POS venezolano con inteligencia artificial">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ZenPos · El primer software con IA para tu negocio venezolano">
+<meta name="twitter:description" content="Escanea facturas con una foto, sube pedidos con una captura y habla con tu negocio en español. Todo incluido + IA · $30/mes · Primer mes gratis.">
+<meta name="twitter:image" content="https://zentrixsoftware.com/og-cover.png">
+
+<!-- Datos estructurados: el software (rich results de Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ZenPos",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS (PWA)",
+  "url": "https://zentrixsoftware.com/zenpos.html",
+  "description": "El primer punto de venta venezolano con inteligencia artificial. Escanea facturas de proveedor con una foto para registrar la compra y actualizar el inventario, sube pedidos de e-commerce con una captura y pregúntale a tu negocio en español. En bolívares y dólares con tasa BCV automática, con módulos por rubro: tienda, licorería, panadería, agua y granel, y talleres.",
+  "offers": {
+    "@type": "Offer", "name": "ZenPos Full", "price": "30", "priceCurrency": "USD",
+    "description": "Un solo plan con todo incluido e inteligencia artificial, para el rubro de tu negocio. Primer mes gratis."
+  },
+  "publisher": { "@type": "Organization", "name": "Zentrix Software", "url": "https://zentrixsoftware.com/" },
+  "inLanguage": "es-VE"
+}
+</script>
+
+<style>
+/* ── Fuentes self-hosted (sin CDN externo) ── */
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/plus-jakarta-sans-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/plus-jakarta-sans-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/plus-jakarta-sans-500-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/plus-jakarta-sans-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/plus-jakarta-sans-600-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/plus-jakarta-sans-600-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/plus-jakarta-sans-700-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/plus-jakarta-sans-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/plus-jakarta-sans-800-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/plus-jakarta-sans-800-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+/* ── Variables ── */
+:root{
+  --bg:#06110C; --bg2:#0A1A12; --bg3:#0E2018;
+  --surface:rgba(255,255,255,.05); --surface2:rgba(255,255,255,.08);
+  --border:rgba(255,255,255,.08); --border2:rgba(255,255,255,.14);
+  --on-dark:#FAF8F2; --on-dark-mut:rgba(250,248,242,.65); --on-dark-fade:rgba(250,248,242,.56);
+  --green:#07A66B; --green-h:#059c61; --green-dim:rgba(7,166,107,.14); --green-ring:rgba(7,166,107,.3);
+  --ease-quint:cubic-bezier(.22,1,.36,1); --ease-expo:cubic-bezier(.16,1,.3,1);
+  --yellow:#E9C46A; --red:#E5736B;
+  --font:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --r:14px; --r-sm:9px;
+  --wrap:1140px;
+}
+/* ── Reset ── */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--on-dark);font-family:var(--font);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img,svg{display:block}
+button{font-family:var(--font);cursor:pointer}
+:focus-visible{outline:2px solid var(--green);outline-offset:2px;border-radius:4px}
+
+/* ── Wrap ── */
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+
+/* ── Buttons ── */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font);font-weight:700;border-radius:10px;border:none;cursor:pointer;transition:transform .15s var(--ease-quint),background .15s,box-shadow .15s,border-color .15s;white-space:nowrap;text-decoration:none}
+.btn-prim{background:var(--green);color:#fff;padding:11px 22px;font-size:14px}
+.btn-prim:hover{background:var(--green-h);transform:translateY(-1px);box-shadow:0 8px 24px rgba(7,166,107,.35)}
+.btn:active{transform:translateY(0) scale(.97);transition-duration:.08s}
+.btn-ghost{background:transparent;color:var(--on-dark);border:1.5px solid var(--border2);padding:10px 20px;font-size:14px}
+.btn-ghost:hover{border-color:var(--on-dark);background:rgba(255,255,255,.06)}
+.btn-on-dark{background:rgba(255,255,255,.1);color:var(--on-dark);border:1.5px solid rgba(255,255,255,.2);padding:12px 24px;font-size:15px}
+.btn-on-dark:hover{background:rgba(255,255,255,.16)}
+.btn-lg{padding:14px 28px;font-size:15px;border-radius:12px}
+.btn-block{width:100%;justify-content:center;padding:13px;font-size:14px}
+
+/* ── Chip ── */
+.chip{display:inline-flex;align-items:center;gap:7px;background:var(--green-dim);border:1px solid var(--green-ring);color:var(--green);font-size:12.5px;font-weight:600;padding:5px 13px;border-radius:100px}
+.chip.on-dark{background:rgba(250,248,242,.08);border-color:rgba(250,248,242,.16);color:var(--on-dark)}
+.live{width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 var(--green-ring)}50%{opacity:.8;box-shadow:0 0 0 5px transparent}}
+
+/* ── Nav ── */
+.nav{position:sticky;top:0;z-index:100;padding:0;transition:background .2s,border-color .2s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.nav.scrolled{background:rgba(6,17,12,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg,.brand-logo{width:30px;height:30px;flex-shrink:0}
+.brand-name{font-size:17px;font-weight:800;color:var(--on-dark);letter-spacing:-.3px}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-link{padding:7px 12px;border-radius:8px;font-size:13.5px;font-weight:500;color:var(--on-dark-mut);transition:color .12s,background .12s}
+.nav-link:hover{color:var(--on-dark);background:var(--surface)}
+.nav-cta{display:flex;align-items:center;gap:10px;flex-shrink:0}
+
+/* ── Typography ── */
+.display{font-size:clamp(38px,5.4vw,60px);font-weight:800;line-height:1.06;letter-spacing:-.03em;color:var(--on-dark);text-wrap:balance}
+.h2{font-size:clamp(28px,3.5vw,42px);font-weight:800;line-height:1.15;letter-spacing:-.025em;color:var(--on-dark);text-wrap:balance}
+.lead{font-size:clamp(15px,1.5vw,17px);color:var(--on-dark-mut);line-height:1.65;max-width:600px;text-wrap:pretty}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.eyebrow.centered{text-align:center}
+.grad-text{color:var(--green)}
+
+/* ── Fade-in animation ── */
+.fi{opacity:1;transform:none;transition:opacity .6s var(--ease-quint),transform .6s var(--ease-quint)}
+html.js .fi:not(.in){opacity:0;transform:translateY(18px)}
+.fi.in{opacity:1;transform:none}
+.d1{transition-delay:.09s}.d2{transition-delay:.18s}.d3{transition-delay:.27s}.d4{transition-delay:.36s}
+@media(prefers-reduced-motion:reduce){html.js .fi:not(.in){opacity:1;transform:none}.fi{transition:none}.live{animation:none}.mq{animation:none}*{scroll-behavior:auto}}
+
+/* ── Section ── */
+.sec{padding:96px 0}
+.sec-head{margin-bottom:52px;max-width:660px}
+.sec-head.centered{text-align:center;margin-left:auto;margin-right:auto}
+.sec-head.centered .lead{margin:14px auto 0}
+.sec-head .lead{margin-top:14px}
+
+/* ── HERO ── */
+.hero{position:relative;padding:72px 0 88px;overflow:hidden;min-height:84vh;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 62% 38%,rgba(7,166,107,.13) 0%,transparent 70%);z-index:0}
+.hero-grid-lines{position:absolute;inset:0;z-index:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 80% at 60% 40%,black 0%,transparent 70%);opacity:.4}
+.hero .wrap{position:relative;z-index:1}
+.hero-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero-left{display:flex;flex-direction:column;gap:0}
+.hero-left .chip{margin-bottom:20px;align-self:flex-start}
+.hero-left .lead{margin:16px 0 26px;max-width:520px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.hero-assure{display:flex;gap:18px;flex-wrap:wrap}
+.hero-assure span{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--on-dark-fade)}
+.hero-assure svg{color:var(--green);flex-shrink:0}
+
+/* ── IA scanner mock (hero visual) ── */
+.hero-right{position:relative}
+.pos-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:320px;height:320px;background:radial-gradient(circle,rgba(7,166,107,.18) 0%,transparent 70%);pointer-events:none}
+.ia-shell{background:#0E1F16;border:1px solid var(--border2);border-radius:16px;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,.5),0 0 0 1px rgba(7,166,107,.08);position:relative;z-index:1}
+.ia-top{display:flex;align-items:center;gap:8px;padding:11px 14px;background:#0A180F;border-bottom:1px solid var(--border);font-size:12.5px;font-weight:700;color:var(--on-dark)}
+.ia-top .ia-t-ic{width:24px;height:24px;border-radius:7px;background:var(--green-dim);display:flex;align-items:center;justify-content:center;color:var(--green)}
+.ia-top .ia-badge{margin-left:auto;font-size:10px;font-weight:700;color:var(--green);background:var(--green-dim);border:1px solid var(--green-ring);padding:3px 9px;border-radius:100px;display:flex;align-items:center;gap:5px}
+.ia-body{padding:14px}
+.ia-photo{background:#081410;border:1px dashed var(--border2);border-radius:9px;padding:11px 12px;display:flex;align-items:center;gap:11px;margin-bottom:9px}
+.ia-photo .ph-ic{width:34px;height:34px;border-radius:8px;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.ia-photo .ph-lines{flex:1;display:flex;flex-direction:column;gap:4px}
+.ia-photo .ph-ln{height:5px;border-radius:3px;background:rgba(255,255,255,.1)}
+.ia-photo .ph-ln.s{width:60%}.ia-photo .ph-ln.m{width:85%}
+.ia-photo .ph-t{font-size:10px;color:var(--on-dark-fade);white-space:nowrap}
+.ia-arrow{display:flex;align-items:center;justify-content:center;gap:6px;font-size:10.5px;color:var(--green);font-weight:600;margin:2px 0 9px}
+.ia-rows{border:1px solid var(--border);border-radius:9px;overflow:hidden}
+.ia-row{display:grid;grid-template-columns:1fr 30px 44px 12px;gap:7px;padding:8px 11px;font-size:10.5px;align-items:center}
+.ia-row.head{background:var(--surface);color:var(--on-dark-fade);font-weight:700;font-size:9px;text-transform:uppercase;letter-spacing:.04em}
+.ia-row+.ia-row{border-top:1px solid var(--border)}
+.ia-row .rp{color:var(--on-dark-mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ia-row .rq,.ia-row .rc{color:var(--on-dark);font-weight:600;text-align:right}
+.ia-dot{width:8px;height:8px;border-radius:50%;justify-self:center}
+.dot-ok{background:var(--green)}
+.dot-rev{background:var(--yellow)}
+.ia-note{display:flex;align-items:center;gap:6px;font-size:9.5px;color:var(--on-dark-fade);margin:9px 0 0}
+.ia-note .sw{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.ia-confirm{margin-top:11px;background:var(--green);color:#fff;text-align:center;padding:9px;border-radius:8px;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:6px}
+/* Float badges */
+.float-badge{position:absolute;display:flex;align-items:center;gap:9px;background:rgba(14,31,22,.92);border:1px solid var(--border2);border-radius:11px;padding:9px 13px;backdrop-filter:blur(10px);z-index:2;box-shadow:0 8px 24px rgba(0,0,0,.3);min-width:172px}
+.fb-rate{top:-16px;left:-38px}
+.fb-sale{bottom:-14px;right:-26px}
+.fb-ic{width:34px;height:34px;border-radius:9px;background:var(--green-dim);display:flex;align-items:center;justify-content:center;color:var(--green);flex-shrink:0}
+.fb-t1{font-size:12px;font-weight:700;color:var(--on-dark)}
+.fb-t2{font-size:10.5px;color:var(--on-dark-fade)}
+
+/* ── Marquee ── */
+.mq-wrap{overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:13px 0;background:rgba(7,166,107,.04)}
+.mq{display:flex;gap:0;animation:mq 34s linear infinite;width:max-content}
+.mqi{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;color:var(--on-dark-mut);padding:0 20px;white-space:nowrap}
+.mqi b{color:var(--green)}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── IA protagonista ── */
+.ia-sec{position:relative}
+.ia-sec-bg{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,var(--bg) 0%,#061B0E 42%,#061B0E 58%,var(--bg) 100%)}
+.ia-sec .wrap{position:relative;z-index:1}
+
+/* ── Grid de tarjetas de módulo (IA + rubros) ── */
+.u-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.ucard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:24px;transition:border-color .2s,transform .2s;display:flex;flex-direction:column;gap:16px}
+.ucard:hover{border-color:rgba(255,255,255,.16);transform:translateY(-2px)}
+.ucard.feat{grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.u-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--green);background:var(--green-dim);border:1px solid var(--green-ring);padding:4px 10px;border-radius:100px;margin-bottom:10px}
+.u-ic{font-size:30px;margin-bottom:8px;display:block}
+.u-h{font-size:17px;font-weight:700;color:var(--on-dark);line-height:1.3}
+.u-p{font-size:13.5px;color:var(--on-dark-mut);margin-top:8px;line-height:1.62}
+.u-p strong{color:var(--on-dark);font-weight:600}
+.u-visual{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.u-row{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;gap:12px}
+.u-row .k{color:var(--on-dark-mut)}
+.u-row .v{color:var(--on-dark);font-weight:600;text-align:right;white-space:nowrap}
+.cart-sep{height:1px;background:var(--border);margin:2px 0}
+.tank{display:flex;gap:10px;margin-bottom:8px;align-items:flex-end;height:78px}
+.tank-col{flex:1;background:rgba(255,255,255,.06);border-radius:4px;position:relative;overflow:hidden}
+.tank-fill{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,var(--green),rgba(7,166,107,.4));border-radius:4px}
+.tank-lbl{display:flex;gap:10px;font-size:9.5px;color:var(--on-dark-fade);margin-bottom:8px}
+.tank-lbl span{flex:1;text-align:center}
+.ia-inline-cta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:34px}
+.ia-inline-cta .note{font-size:13px;color:var(--on-dark-fade)}
+
+/* ── POS serio (base) ── */
+.base-inner{display:grid;grid-template-columns:.95fr 1.05fr;gap:52px;align-items:center}
+.base-list{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.base-item{display:flex;align-items:flex-start;gap:10px}
+.base-item .bi-ic{width:30px;height:30px;border-radius:8px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.base-item .bi-h{font-size:13.5px;font-weight:700;color:var(--on-dark)}
+.base-item .bi-p{font-size:12px;color:var(--on-dark-fade);line-height:1.4;margin-top:1px}
+/* POS mock */
+.pos-shell{background:#0E1F16;border:1px solid var(--border2);border-radius:16px;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,.5),0 0 0 1px rgba(7,166,107,.08);position:relative}
+.pos-top{display:flex;align-items:center;gap:6px;padding:10px 14px;background:#0A180F;border-bottom:1px solid var(--border)}
+.pos-dot{width:10px;height:10px;border-radius:50%}
+.pos-top-label{margin-left:auto;font-size:10.5px;color:var(--on-dark-fade);font-weight:500}
+.pos-body{display:grid;grid-template-columns:40px 1fr 112px;height:280px}
+.pos-rail{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 0;background:#081410;border-right:1px solid var(--border)}
+.pos-ri{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--on-dark-fade)}
+.pos-ri.act{background:var(--green-dim)}
+.pos-main{overflow:hidden;display:flex;flex-direction:column}
+.pos-search{display:flex;align-items:center;gap:6px;padding:8px 10px;font-size:10px;color:var(--on-dark-fade);border-bottom:1px solid var(--border);background:#0A180F}
+.pos-cats{display:flex;gap:4px;padding:7px 8px;overflow:hidden;border-bottom:1px solid var(--border)}
+.pos-cat{font-size:9px;font-weight:600;padding:3px 8px;border-radius:5px;white-space:nowrap;border:1px solid var(--border);color:var(--on-dark-fade)}
+.pos-cat.on{background:var(--green);color:#fff;border-color:var(--green)}
+.pos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;padding:7px 8px;overflow:hidden}
+.pos-prod{background:var(--surface);border:1px solid var(--border);border-radius:7px;padding:7px 6px;text-align:center}
+.pos-prod.hi{border-color:var(--green-ring)}
+.pos-tile{width:28px;height:28px;border-radius:6px;margin:0 auto 4px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff}
+.pos-pnm{font-size:8.5px;color:var(--on-dark-mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pos-ppr{font-size:9px;font-weight:700;color:var(--on-dark);margin-top:2px}
+.pos-cart{display:flex;flex-direction:column;padding:10px 9px;border-left:1px solid var(--border);font-size:10px;overflow:hidden}
+.cart-h{font-size:9.5px;font-weight:700;color:var(--on-dark-mut);margin-bottom:8px}
+.cart-item{display:flex;justify-content:space-between;margin-bottom:5px;gap:4px}
+.ci-nm{color:var(--on-dark-mut);font-size:9px;line-height:1.3}
+.ci-pr{font-weight:700;color:var(--on-dark);white-space:nowrap}
+.cart-total{display:flex;justify-content:space-between;font-weight:800;margin-top:2px}
+.ct-bs{font-size:8px;color:var(--on-dark-fade);text-align:right;margin-top:2px}
+.cart-mets{display:flex;flex-direction:column;gap:3px;margin:7px 0}
+.cart-met{font-size:8.5px;padding:3px 5px;border-radius:4px;border:1px solid var(--border);color:var(--on-dark-fade)}
+.cart-met.act{border-color:var(--green-ring);color:var(--green);background:var(--green-dim)}
+.cart-pay{margin-top:auto;background:var(--green);color:#fff;text-align:center;padding:6px;border-radius:6px;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:4px}
+
+/* ── Comparison ── */
+.cmp-table{border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.cmp-row{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid var(--border)}
+.cmp-row:last-child{border-bottom:none}
+.cmp-row.head{background:var(--surface)}
+.cmp-cell{padding:14px 18px;font-size:13.5px;display:flex;align-items:center;gap:8px}
+.cmp-cell.feat-name{color:var(--on-dark-mut);font-weight:500}
+.cmp-cell.old{color:var(--on-dark-fade)}
+.cmp-cell.zen{background:rgba(7,166,107,.05)}
+.cmp-head-old{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--on-dark-fade)}
+.cmp-head-zen{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--green)}
+.ico-yes{color:var(--green);flex-shrink:0}
+.ico-no{color:var(--red);opacity:.6;flex-shrink:0}
+.cmp-txt-yes{color:var(--on-dark);font-size:13px}
+.cmp-txt-no{color:var(--on-dark-fade);font-size:13px}
+
+/* ── Security ── */
+.sg-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.sg-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sg-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);padding:18px}
+.sg-ic{width:36px;height:36px;border-radius:9px;background:var(--green-dim);display:flex;align-items:center;justify-content:center;color:var(--green);margin-bottom:10px}
+.sg-h{font-size:14px;font-weight:700;margin-bottom:4px}
+.sg-p{font-size:12.5px;color:var(--on-dark-mut);line-height:1.5}
+.sg-band{background:linear-gradient(180deg,var(--bg),#061B0E 50%,var(--bg))}
+
+/* ── Testimonials ── */
+.test-card{background:#0E2018;border:1px solid rgba(7,166,107,.18);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:16px;max-width:680px;margin:0 auto}
+.test-stars{color:var(--yellow);font-size:15px;letter-spacing:2px}
+.test-q{font-size:16px;color:var(--on-dark-mut);line-height:1.7}
+.test-by{display:flex;align-items:center;gap:12px}
+.test-av{width:40px;height:40px;border-radius:10px;background:var(--green-dim);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;flex-shrink:0}
+.test-nm{font-size:14px;font-weight:700;color:var(--on-dark)}
+.test-tp{font-size:11.5px;color:var(--on-dark-fade)}
+
+/* ── Pricing ── */
+.price-sec{background:linear-gradient(180deg,var(--bg) 0%,#071510 50%,var(--bg) 100%)}
+.bcv-banner{display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(7,166,107,.1);border:1px solid var(--green-ring);border-radius:12px;padding:14px 20px;margin-bottom:34px;font-size:14px;color:var(--on-dark-mut);text-align:center;flex-wrap:wrap}
+.bcv-banner strong{color:var(--on-dark)}
+.bcv-banner svg{color:var(--green);flex-shrink:0}
+.price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:22px}
+.pcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:28px;position:relative;display:flex;flex-direction:column}
+.pcard.hot{background:#0E2018;border-color:rgba(7,166,107,.25);box-shadow:0 0 40px rgba(7,166,107,.08)}
+.hot-pill{display:inline-flex;align-items:center;font-size:11px;font-weight:700;color:var(--green);background:var(--green-dim);border:1px solid var(--green-ring);padding:4px 11px;border-radius:100px;margin-bottom:16px;align-self:flex-start}
+.p-new{display:inline-block;background:rgba(7,166,107,.16);color:var(--green);font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:20px;margin-bottom:8px;align-self:flex-start}
+.p-name{font-size:15px;font-weight:700;color:var(--on-dark-mut);margin-bottom:8px}
+.p-amt{display:flex;align-items:baseline;gap:3px;margin-bottom:10px}
+.p-amt .cur{font-size:22px;font-weight:700;color:var(--green)}
+.p-amt .num{font-size:52px;font-weight:800;color:var(--on-dark);line-height:1}
+.p-amt .per{font-size:14px;color:var(--on-dark-fade)}
+.p-desc{font-size:13.5px;color:var(--on-dark-mut);margin-bottom:20px;line-height:1.5}
+.p-sep{height:1px;background:var(--border);margin-bottom:20px}
+.p-feats{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;flex:1}
+.p-feats li{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;color:var(--on-dark-mut)}
+.p-feats li svg{color:var(--green);flex-shrink:0;margin-top:2px}
+.p-feats li b{color:var(--on-dark);font-weight:600}
+.p-feats li.off{opacity:.4}
+.p-feats li.off svg{color:var(--red)}
+/* Add-ons */
+.addons-section{margin-top:12px}
+.addons-title{text-align:center;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--on-dark-fade);margin-bottom:18px}
+.addon-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.addon-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:20px 22px;display:flex;align-items:center;gap:14px;transition:border-color .2s}
+.addon-card:hover{border-color:var(--border2)}
+.addon-ic{font-size:28px;flex-shrink:0}
+.addon-body{flex:1;min-width:0}
+.addon-name{font-size:15px;font-weight:700;color:var(--on-dark);margin-bottom:3px}
+.addon-desc{font-size:12.5px;color:var(--on-dark-mut);line-height:1.45}
+.addon-price{flex-shrink:0;text-align:right}
+.addon-price .add-amt{font-size:22px;font-weight:800;color:var(--green)}
+.addon-price .add-per{font-size:12px;color:var(--on-dark-fade)}
+/* IA add-on (premium) */
+.ia-addon{grid-column:span 2;background:linear-gradient(135deg,rgba(7,166,107,.16),rgba(7,166,107,.04));border:1px solid rgba(7,166,107,.3)}
+.ia-addon .addon-ic{width:46px;height:46px;border-radius:12px;background:var(--green-dim);display:flex;align-items:center;justify-content:center;font-size:24px}
+.ia-addon .addon-name{font-size:16px}
+.ia-addon .add-cta{white-space:nowrap}
+.custom-band{margin:22px 0 0;background:linear-gradient(135deg,rgba(7,166,107,.1),rgba(7,166,107,.03));border:1px solid rgba(7,166,107,.24);border-radius:16px;padding:22px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.custom-band .cb-t{font-size:18px;font-weight:800;color:var(--on-dark);margin-bottom:4px}
+.custom-band .cb-d{font-size:13.5px;color:var(--on-dark-mut);max-width:560px;line-height:1.5}
+.price-note{text-align:center;font-size:13px;color:var(--on-dark-fade);margin-top:30px;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+.price-note b{color:var(--on-dark);font-weight:600}
+
+/* ── Assurance ── */
+.assure-band{background:#071510;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.assure-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.assure-card{display:flex;align-items:flex-start;gap:14px}
+.assure-ic{width:44px;height:44px;border-radius:11px;background:var(--green-dim);display:flex;align-items:center;justify-content:center;color:var(--green);flex-shrink:0}
+.assure-h{font-size:15px;font-weight:700;margin-bottom:5px}
+.assure-p{font-size:13px;color:var(--on-dark-mut);line-height:1.55}
+
+/* ── FAQ ── */
+.faq-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:76px;align-items:start}
+.faq-list{display:flex;flex-direction:column}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;color:var(--on-dark);font-size:14.5px;font-weight:600;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;cursor:pointer;transition:color .12s}
+.faq-q:hover{color:var(--green)}
+.faq-ico{width:24px;height:24px;border-radius:6px;background:var(--surface2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--on-dark-fade);transition:background .2s,color .2s,transform .2s}
+.faq-item.open .faq-ico{background:var(--green-dim);color:var(--green);transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-a-in{padding:0 0 18px;font-size:14px;color:var(--on-dark-mut);line-height:1.7}
+
+/* ── CTA ── */
+.cta{position:relative;text-align:center;padding:96px 0}
+.cta-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(7,166,107,.12) 0%,transparent 70%)}
+.cta .wrap{position:relative;z-index:1}
+.cta .h2{max-width:600px;margin:0 auto}
+.cta-p{max-width:500px;margin:16px auto 0;color:var(--on-dark-mut)}
+.cta-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px}
+.cta-mini{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:20px}
+.cta-mini span{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--on-dark-fade)}
+.cta-mini svg{color:var(--green);flex-shrink:0}
+
+/* ── Footer ── */
+footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px}
+.foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.foot-brand p{font-size:13px;color:var(--on-dark-fade);line-height:1.6;margin-top:12px;max-width:250px}
+.foot-col h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--on-dark-fade);margin-bottom:14px}
+.foot-col a{display:block;font-size:13.5px;color:var(--on-dark-mut);margin-bottom:9px;transition:color .12s}
+.foot-col a:hover{color:var(--on-dark)}
+.foot-bot{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid var(--border);font-size:12.5px;color:var(--on-dark-fade);flex-wrap:wrap;gap:8px}
+.foot-bot a{color:var(--green)}
+
+/* ── Responsive ── */
+@media(max-width:1024px){
+  .hero-inner{gap:40px}
+  .u-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ucard.feat{grid-column:span 2}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hero{padding:52px 0 64px;min-height:auto}
+  .hero-inner{grid-template-columns:1fr;gap:44px}
+  .hero-right{display:none}
+  .sec{padding:64px 0}
+  .u-grid{grid-template-columns:1fr}
+  .ucard.feat{grid-column:span 1;grid-template-columns:1fr}
+  .base-inner,.sg-inner,.faq-inner,.foot-top{grid-template-columns:1fr;gap:36px}
+  .base-list{grid-template-columns:1fr 1fr}
+  .cmp-cell{padding:10px 12px;font-size:12px}
+  .price-grid,.addon-grid{grid-template-columns:minmax(0,1fr)}
+  .ia-addon{grid-column:span 1}
+  .addon-card{flex-wrap:wrap;min-width:0}
+  .ia-addon .add-cta{width:100%;justify-content:center;margin-top:6px}
+  .assure-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .wrap{padding:0 16px}
+  .nav-cta .btn-ghost{display:none}
+  .cmp-table{font-size:11px}
+  .base-list{grid-template-columns:1fr}
+  .hero-btns{flex-direction:column;align-items:stretch}
+  .hero-btns .btn{justify-content:center}
+  .cta-btns{flex-direction:column;align-items:stretch}
+  .foot-top{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img src="zenpos-logo.png" alt="ZenPos, producto de Zentrix Software" style="height:36px;width:auto;display:block">
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Zentrix Software</a>
+      <a href="#ia" class="nav-link">IA</a>
+      <a href="#rubros" class="nav-link">Tu rubro</a>
+      <a href="#funciones" class="nav-link">Funciones</a>
+      <a href="#precios" class="nav-link">Precios</a>
+      <a href="#faq" class="nav-link">Preguntas</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://maroon.maxapex.net/apex/r/a266019/zenpos150" target="_blank" rel="noopener" class="btn btn-ghost" style="padding:9px 16px;font-size:14px">Iniciar sesión</a>
+      <a href="https://wa.me/584129840048?text=Hola%2C%20quiero%20empezar%20con%20ZenPos" target="_blank" rel="noopener" class="btn btn-prim" style="padding:9px 18px;font-size:14px">Empezar gratis</a>
+    </div>
+  </div>
+</header>
+
+<span id="top"></span>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="fi"><span class="chip"><span class="live"></span>El primer software con IA para tu negocio venezolano</span></div>
+        <h1 class="display fi d1">Empieza a usar <span class="grad-text">IA</span> en tu negocio</h1>
+        <p class="lead fi d2">El primer POS venezolano con inteligencia artificial: escanea tus facturas con una foto y pregúntale a tu negocio en español. Todo en bolívares y dólares.</p>
+        <div class="hero-btns fi d3">
+          <a href="https://wa.me/584129840048?text=Hola%2C%20quiero%20probar%20ZenPos%20gratis" target="_blank" rel="noopener" class="btn btn-prim btn-lg">
+            Probar un mes gratis
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h8M7 3l4 4-4 4"/></svg>
+          </a>
+          <a href="https://maroon.maxapex.net/apex/r/a266019/zenpos150" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Ver demo en vivo</a>
+        </div>
+        <div class="hero-assure fi d4">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Sin tarjeta</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Sin instalación</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Cancela cuando quieras</span>
+        </div>
+      </div>
+
+      <!-- IA scanner mock -->
+      <div class="hero-right fi d2">
+        <div class="float-badge fb-rate">
+          <div class="fb-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3"/></svg></div>
+          <div>
+            <div class="fb-t1">Una foto basta</div>
+            <div class="fb-t2">La IA lee tu factura</div>
+          </div>
+        </div>
+        <div class="float-badge fb-sale">
+          <div class="fb-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <div>
+            <div class="fb-t1">Compra registrada</div>
+            <div class="fb-t2">Inventario actualizado solo</div>
+          </div>
+        </div>
+        <div class="pos-glow"></div>
+        <div class="ia-shell" role="img" aria-label="Ejemplo del escáner de facturas de ZenPos: una foto de la factura se convierte en la lista de productos con su cantidad y costo, y un semáforo marca lo que conviene revisar antes de confirmar.">
+          <div class="ia-top">
+            <span class="ia-t-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3"/></svg></span>
+            Escáner de facturas
+            <span class="ia-badge"><span class="live"></span>IA</span>
+          </div>
+          <div class="ia-body">
+            <div class="ia-photo">
+              <div class="ph-ic">🧾</div>
+              <div class="ph-lines">
+                <div class="ph-ln m"></div>
+                <div class="ph-ln s"></div>
+                <div class="ph-ln m"></div>
+              </div>
+              <div class="ph-t">Foto de la<br>factura</div>
+            </div>
+            <div class="ia-arrow">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+              La IA lee y extrae los productos
+            </div>
+            <div class="ia-rows">
+              <div class="ia-row head"><span>Producto</span><span class="rq">Cant</span><span class="rc">Costo</span><span></span></div>
+              <div class="ia-row"><span class="rp">Harina P.A.N. 1 kg</span><span class="rq">50</span><span class="rc">$0,85</span><span class="ia-dot dot-ok" title="Coincide con tu catálogo"></span></div>
+              <div class="ia-row"><span class="rp">Aceite Vatel 1 L</span><span class="rq">30</span><span class="rc">$1,20</span><span class="ia-dot dot-ok" title="Coincide con tu catálogo"></span></div>
+              <div class="ia-row"><span class="rp">Azúcar Montalbán 1 kg</span><span class="rq">20</span><span class="rc">$0,98</span><span class="ia-dot dot-rev" title="Subió de precio: conviene revisar"></span></div>
+            </div>
+            <div class="ia-note">
+              <span class="sw dot-ok"></span>Coincide
+              <span class="sw dot-rev" style="margin-left:8px"></span>Revisar (subió de precio)
+            </div>
+            <div class="ia-confirm">Revisar y registrar compra
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h8M7 3l4 4-4 4"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MARQUEE ===================== -->
+<div class="mq-wrap">
+  <div class="mq" id="mq"></div>
+</div>
+
+<!-- ===================== IA (PROTAGONISTA) ===================== -->
+<section class="sec ia-sec" id="ia">
+  <div class="ia-sec-bg"></div>
+  <div class="wrap">
+    <div class="sec-head fi">
+      <div class="u-badge"><span class="live"></span>Inteligencia artificial</div>
+      <h2 class="h2">La IA que hace el trabajo<br>pesado de tu negocio</h2>
+      <p class="lead">Ningún otro POS venezolano tiene esto. La IA lee, extrae y prepara, y tú confirmas con un vistazo. Tres formas de usar inteligencia artificial en tu día a día, hoy mismo.</p>
+    </div>
+
+    <div class="u-grid">
+      <!-- Producto IA 1: Escáner de facturas -->
+      <div class="ucard feat fi">
+        <div>
+          <div class="u-badge"><span class="live"></span>Disponible</div>
+          <span class="u-ic">📸</span>
+          <h3 class="u-h">Escanea tus facturas de proveedor con una foto</h3>
+          <p class="u-p">Le tomas una foto a la factura del proveedor y la IA lee cada producto, su cantidad y su costo. <strong>Registra la compra y actualiza tu inventario</strong>, detecta cuando un precio subió y te sugiere el nuevo precio de venta. Un semáforo marca lo que conviene revisar: <strong>tú das el visto bueno, la IA hace el trabajo pesado.</strong></p>
+        </div>
+        <div class="u-visual">
+          <div class="u-row"><span class="k">🧾 Factura</span><span class="v" style="color:var(--green)">Distribuidora Central</span></div>
+          <div class="u-row"><span class="k">Productos leídos</span><span class="v">14 renglones</span></div>
+          <div class="cart-sep"></div>
+          <div class="u-row"><span class="k">Coinciden con tu catálogo</span><span class="v" style="color:var(--green)">12</span></div>
+          <div class="u-row"><span class="k">Subió el precio (revisar)</span><span class="v" style="color:var(--yellow)">2</span></div>
+          <div class="u-row"><span class="k">Condición</span><span class="v">Crédito 30 días</span></div>
+        </div>
+      </div>
+
+      <!-- Producto IA 2: Captura e-commerce -->
+      <div class="ucard fi">
+        <div class="u-badge"><span class="live"></span>Disponible</div>
+        <span class="u-ic">🛍️</span>
+        <h3 class="u-h">Sube tus pedidos de e-commerce con una captura</h3>
+        <p class="u-p">Compras en Amazon, eBay o Shein para revender. Le pasas la captura del pedido y la IA arma una <strong>orden de compra en espera</strong>, lista para recibir cuando llegue la mercancía. Sin transcribir nada a mano.</p>
+      </div>
+
+      <!-- Producto IA 3: Habla con tu negocio -->
+      <div class="ucard feat fi">
+        <div>
+          <div class="u-badge"><span class="live"></span>Disponible</div>
+          <span class="u-ic">💬</span>
+          <h3 class="u-h">Habla con tu negocio en español</h3>
+          <p class="u-p">Escribe una pregunta normal y recibe la respuesta al instante, con cifras reales de tu negocio: <strong>"¿cuánto vendí esta semana?"</strong>, <strong>"¿quién me debe?"</strong>, <strong>"¿qué se me está acabando?"</strong>, <strong>"¿qué producto me deja más ganancia?"</strong>. Sin menús ni reportes complicados.</p>
+        </div>
+        <div class="u-visual">
+          <div class="u-row"><span class="k">🗨️ Tú</span><span class="v" style="color:var(--on-dark-mut)">¿cuánto vendí esta semana?</span></div>
+          <div class="cart-sep"></div>
+          <div class="u-row"><span class="k">🤖 ZenPos</span><span class="v" style="color:var(--green)">Bs 84.300 · $122</span></div>
+          <div class="u-row"><span class="k">vs. semana pasada</span><span class="v" style="color:var(--green)">+18% ↑</span></div>
+          <div class="u-row"><span class="k">Producto top</span><span class="v">Empanadas</span></div>
+        </div>
+      </div>
+
+      <!-- Cómo se activa -->
+      <div class="ucard fi">
+        <div class="u-badge">Incluida en tu plan</div>
+        <span class="u-ic">🚀</span>
+        <h3 class="u-h">La IA viene incluida en tu plan</h3>
+        <p class="u-p">No es un extra ni un add-on aparte: ya viene en tu plan. La activamos y configuramos contigo por WhatsApp para que le saques provecho desde el primer día.</p>
+      </div>
+    </div>
+
+    <div class="ia-inline-cta fi">
+      <a href="https://wa.me/584129840048?text=Hola%2C%20quiero%20activar%20la%20IA%20en%20mi%20negocio" target="_blank" rel="noopener" class="btn btn-prim btn-lg">Quiero activar la IA en mi negocio
+        <svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h8M7 3l4 4-4 4"/></svg>
+      </a>
+      <span class="note">Incluida en tu plan, con acompañamiento para configurarla.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RUBROS ===================== -->
+<section class="sec" id="rubros">
+  <div class="wrap">
+    <div class="sec-head fi">
+      <div class="eyebrow">ZenPos habla tu rubro</div>
+      <h2 class="h2">Módulos hechos para tu tipo<br>de negocio, no genéricos</h2>
+      <p class="lead">No copiamos sistemas extranjeros que no calzan. Cada rubro tiene lo que de verdad necesita, y lo sumas a tu plan cuando lo requieras.</p>
+    </div>
+
+    <div class="u-grid">
+      <!-- Agua y granel (destacado) -->
+      <div class="ucard feat fi">
+        <div>
+          <div class="u-badge"><span class="live"></span>Exclusivo del mercado</div>
+          <span class="u-ic">💧</span>
+          <h3 class="u-h">Agua y granel para recargas y distribuidoras</h3>
+          <p class="u-p">Controla el inventario en litros, registra recargas por tanque, aplica factor de merma y descuenta automáticamente al vender. Pensado para recargas de agua potable y distribuidoras. Ningún otro POS venezolano lo tiene.</p>
+        </div>
+        <div class="u-visual">
+          <div class="tank">
+            <div class="tank-col"><div class="tank-fill" style="height:72%"></div></div>
+            <div class="tank-col"><div class="tank-fill" style="height:48%"></div></div>
+            <div class="tank-col"><div class="tank-fill" style="height:88%"></div></div>
+            <div class="tank-col"><div class="tank-fill" style="height:34%"></div></div>
+          </div>
+          <div class="tank-lbl"><span>Tanque 1</span><span>Tanque 2</span><span>Tanque 3</span><span>Tanque 4</span></div>
+          <div class="u-row"><span class="k">Inventario total</span><span class="v">3.420 L</span></div>
+          <div class="u-row"><span class="k">Vendido hoy</span><span class="v" style="color:var(--green)">680 L</span></div>
+        </div>
+      </div>
+
+      <!-- Tienda / bodega -->
+      <div class="ucard fi">
+        <div class="u-badge">Tienda y bodega</div>
+        <span class="u-ic">🏪</span>
+        <h3 class="u-h">Mostrador, peso, combos y códigos</h3>
+        <p class="u-p">Vende por unidad o por peso (kg, gramos, litros, metros), arma combos que descuentan stock solos y genera códigos automáticos. La base sólida para tu tienda o abasto.</p>
+      </div>
+
+      <!-- Panadería / recetas (destacado) -->
+      <div class="ucard feat fi">
+        <div>
+          <div class="u-badge"><span class="live"></span>Disponible</div>
+          <span class="u-ic">🍞</span>
+          <h3 class="u-h">Recetas que calculan costo, precio y stock</h3>
+          <p class="u-p">Para negocios que fabrican lo que venden. Defines la receta con la merma de cada ingrediente y ZenPos <strong>calcula el costo y te sugiere el precio</strong> según tu ganancia, y te dice <strong>cuántas unidades puedes hacer con el stock que tienes</strong>. Cada venta descuenta los insumos sola. Para panaderías, cocinas y comida rápida.</p>
+        </div>
+        <div class="u-visual">
+          <div class="u-row"><span class="k">🍔 Hamburguesa</span><span class="v" style="color:var(--green)">Receta</span></div>
+          <div class="cart-sep"></div>
+          <div class="u-row"><span class="k">Costo calculado</span><span class="v">$7,05</span></div>
+          <div class="u-row"><span class="k">Precio sugerido (+40%)</span><span class="v" style="color:var(--green)">$9,87</span></div>
+          <div class="u-row"><span class="k">Puedes hacer ahora</span><span class="v" style="color:var(--green)">18 unidades</span></div>
+        </div>
+      </div>
+
+      <!-- Licorería -->
+      <div class="ucard fi">
+        <div class="u-badge"><span class="live"></span>Disponible</div>
+        <span class="u-ic">🍺</span>
+        <h3 class="u-h">Licorería y bar</h3>
+        <p class="u-p">Cuenta abierta por mesa o cliente (se va anotando y se cobra al final) y prepago (el cliente paga por adelantado y va consumiendo). El inventario se descuenta al cobrar. Para licorerías, bares y tascas.</p>
+      </div>
+
+      <!-- Servicios / taller (destacado) -->
+      <div class="ucard feat fi">
+        <div>
+          <div class="u-badge"><span class="live"></span>Nuevo</div>
+          <span class="u-ic">🔧</span>
+          <h3 class="u-h">Talleres, mecánicos y oficios</h3>
+          <p class="u-p">¿No vendes de mostrador, prestas un servicio? ZenPos lleva <strong>órdenes de trabajo</strong> con mano de obra y repuestos, <strong>ficha de cada vehículo o equipo con su historial</strong>, agenda de citas, recordatorios de mantenimiento, fotos antes y después, y comisiones por técnico. Para talleres, aires, motos y autolavados.</p>
+        </div>
+        <div class="u-visual">
+          <div class="u-row"><span class="k">🔧 Orden #142 · Toyota</span><span class="v" style="color:var(--green)">$45,00</span></div>
+          <div class="u-row"><span class="k">Cambio de aceite + filtro</span><span class="v" style="color:var(--on-dark-mut)">mano de obra</span></div>
+          <div class="cart-sep"></div>
+          <div class="u-row"><span class="k">🔔 Recordatorio automático</span><span class="v">en 3.000 km</span></div>
+          <div class="u-row"><span class="k">📅 Próxima cita</span><span class="v" style="color:var(--green)">Vie 10:30</span></div>
+        </div>
+      </div>
+
+      <!-- Catálogo público -->
+      <div class="ucard fi">
+        <div class="u-badge"><span class="live"></span>Vende por WhatsApp</div>
+        <span class="u-ic">📱</span>
+        <h3 class="u-h">Catálogo público con link de WhatsApp</h3>
+        <p class="u-p">Publica los productos que quieras en una página web propia (sin login) y compártela por WhatsApp, Instagram o Facebook. Tu cliente arma el pedido y te llega directo. Sin comisiones ni exponer tus costos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FUNCIONES BASE (POS SERIO) ===================== -->
+<section class="sec" id="funciones" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02))">
+  <div class="wrap">
+    <div class="sec-head fi">
+      <h2 class="h2">Y todo lo que un POS serio<br>debe tener, de base</h2>
+      <p class="lead">Además de la IA y los módulos de tu rubro, ZenPos reúne ventas, inventario, caja, clientes y reportes en un solo lugar, pensado para la realidad venezolana.</p>
+    </div>
+
+    <div class="base-inner">
+      <!-- POS mock -->
+      <div class="fi d1">
+        <div class="pos-shell">
+          <div class="pos-top">
+            <div class="pos-dot" style="background:#FF5F57"></div>
+            <div class="pos-dot" style="background:#FEBC2E"></div>
+            <div class="pos-dot" style="background:#28C840"></div>
+            <div class="pos-top-label">zenpos · punto de venta</div>
+          </div>
+          <div class="pos-body">
+            <div class="pos-rail">
+              <div class="pos-ri act">🛒</div>
+              <div class="pos-ri">📊</div>
+              <div class="pos-ri">📦</div>
+              <div class="pos-ri">👥</div>
+              <div class="pos-ri">💧</div>
+              <div class="pos-ri">⚙️</div>
+            </div>
+            <div class="pos-main">
+              <div class="pos-search"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg> Buscar producto o código…</div>
+              <div class="pos-cats">
+                <div class="pos-cat on">Todos</div>
+                <div class="pos-cat">Electrónica</div>
+                <div class="pos-cat">Repuestos</div>
+              </div>
+              <div class="pos-grid">
+                <div class="pos-prod hi"><div class="pos-tile" style="background:#07A66B">M</div><div class="pos-pnm">Monitor 27"</div><div class="pos-ppr">$150,00</div></div>
+                <div class="pos-prod"><div class="pos-tile" style="background:#2D7FB8">B</div><div class="pos-pnm">Bombillo 1C</div><div class="pos-ppr">$1,00</div></div>
+                <div class="pos-prod"><div class="pos-tile" style="background:#8657C9">T</div><div class="pos-pnm">Terminal</div><div class="pos-ppr">$25,00</div></div>
+                <div class="pos-prod"><div class="pos-tile" style="background:#C9742E">A</div><div class="pos-pnm">Aceite Motor</div><div class="pos-ppr">$8,50</div></div>
+                <div class="pos-prod"><div class="pos-tile" style="background:#5A8A2A">F</div><div class="pos-pnm">Filtro Aire</div><div class="pos-ppr">$12,00</div></div>
+                <div class="pos-prod" style="opacity:.45"><div class="pos-tile" style="background:#555">R</div><div class="pos-pnm">Relay 12V</div><div class="pos-ppr" style="color:#E5736B">Agotado</div></div>
+              </div>
+            </div>
+            <div class="pos-cart">
+              <div class="cart-h">Carrito · 2 ítems</div>
+              <div class="cart-item"><div class="ci-nm">Monitor 27"<br><span style="color:var(--on-dark-fade);font-size:8.5px">× 1</span></div><div class="ci-pr">$150</div></div>
+              <div class="cart-item"><div class="ci-nm">Terminal<br><span style="color:var(--on-dark-fade);font-size:8.5px">× 1</span></div><div class="ci-pr">$25</div></div>
+              <div class="cart-sep"></div>
+              <div class="cart-total"><div class="ct-l">Total</div><div class="ct-v">$175</div></div>
+              <div class="ct-bs">Bs 98.087,50</div>
+              <div class="cart-mets">
+                <div class="cart-met act">💵 Efectivo</div>
+                <div class="cart-met">📱 Pago Móvil</div>
+                <div class="cart-met">💳 Punto</div>
+              </div>
+              <div class="cart-pay">Cobrar
+                <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h8M7 3l4 4-4 4"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Base feature list -->
+      <div class="base-list fi">
+        <div class="base-item"><div class="bi-ic">🛒</div><div><div class="bi-h">Punto de venta</div><div class="bi-p">Efectivo, punto, fiado y pago mixto Bs + $.</div></div></div>
+        <div class="base-item"><div class="bi-ic">💱</div><div><div class="bi-h">Bolívares y dólares</div><div class="bi-p">Precios en $, cobro en Bs con tasa BCV al día.</div></div></div>
+        <div class="base-item"><div class="bi-ic">📱</div><div><div class="bi-h">Pago móvil</div><div class="bi-p">Registra referencia y banco en cada cobro.</div></div></div>
+        <div class="base-item"><div class="bi-ic">📦</div><div><div class="bi-h">Inventario valorado</div><div class="bi-p">A costo y a precio, con alertas de stock bajo.</div></div></div>
+        <div class="base-item"><div class="bi-ic">🏦</div><div><div class="bi-h">Cierre de caja</div><div class="bi-p">Apertura, arqueo y desglose por método.</div></div></div>
+        <div class="base-item"><div class="bi-ic">👥</div><div><div class="bi-h">Clientes y fiados</div><div class="bi-p">Saldos, historial y recordatorios por WhatsApp.</div></div></div>
+        <div class="base-item"><div class="bi-ic">📊</div><div><div class="bi-h">Reportes con export</div><div class="bi-p">Ventas, ganancias y más a CSV, Excel y PDF.</div></div></div>
+        <div class="base-item"><div class="bi-ic">📝</div><div><div class="bi-h">Cotizaciones en PDF</div><div class="bi-p">Precio congelado y conversión a venta en un clic.</div></div></div>
+        <div class="base-item"><div class="bi-ic">🧾</div><div><div class="bi-h">Órdenes de compra</div><div class="bi-p">Envía al proveedor por correo con PDF o WhatsApp.</div></div></div>
+        <div class="base-item"><div class="bi-ic">💸</div><div><div class="bi-h">Cuentas por pagar</div><div class="bi-p">Deudas con proveedores y abonos que salen de caja.</div></div></div>
+        <div class="base-item"><div class="bi-ic">🔄</div><div><div class="bi-h">Devoluciones</div><div class="bi-p">Parcial o total, con reintegro de stock automático.</div></div></div>
+        <div class="base-item"><div class="bi-ic">🔒</div><div><div class="bi-h">Roles y auditoría</div><div class="bi-p">Quién hizo qué y cuándo. Todo queda registrado.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMPARACIÓN ===================== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head centered fi">
+      <h2 class="h2">Del cuaderno y el Excel<br>a un negocio bajo control</h2>
+    </div>
+    <div class="cmp-table fi d1">
+      <div class="cmp-row head">
+        <div class="cmp-cell feat-name"></div>
+        <div class="cmp-cell old"><span class="cmp-head-old">Cuaderno / Excel</span></div>
+        <div class="cmp-cell zen"><span class="cmp-head-zen"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="7" fill="#07A66B"/><path d="M7 10H25M25 10L7 22.5M7 22.5H25" stroke="#FAF8F2" stroke-width="3.2" stroke-linecap="round"/></svg>ZenPos</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-cell feat-name">Cargar la factura del proveedor</div>
+        <div class="cmp-cell old"><svg class="ico-no" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span class="cmp-txt-no">Renglón por renglón a mano</span></div>
+        <div class="cmp-cell zen"><svg class="ico-yes" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="cmp-txt-yes">Una foto y la IA la lee</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-cell feat-name">Saber tu inventario real</div>
+        <div class="cmp-cell old"><svg class="ico-no" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span class="cmp-txt-no">Contando a mano</span></div>
+        <div class="cmp-cell zen"><svg class="ico-yes" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="cmp-txt-yes">En tiempo real</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-cell feat-name">Preguntar cómo va el negocio</div>
+        <div class="cmp-cell old"><svg class="ico-no" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span class="cmp-txt-no">Sacas la cuenta tú mismo</span></div>
+        <div class="cmp-cell zen"><svg class="ico-yes" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="cmp-txt-yes">Le preguntas a la IA en español</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-cell feat-name">Cierre de caja cuadrado</div>
+        <div class="cmp-cell old"><svg class="ico-no" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span class="cmp-txt-no">Cálculos manuales</span></div>
+        <div class="cmp-cell zen"><svg class="ico-yes" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="cmp-txt-yes">Arqueo automático</span></div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-cell feat-name">Saber quién vendió qué</div>
+        <div class="cmp-cell old"><svg class="ico-no" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg><span class="cmp-txt-no">Imposible</span></div>
+        <div class="cmp-cell zen"><svg class="ico-yes" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="cmp-txt-yes">Auditoría completa</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SEGURIDAD ===================== -->
+<section class="sec sg-band">
+  <div class="wrap">
+    <div class="sg-inner">
+      <div class="fi">
+        <h2 class="h2">La información de tu negocio<br>está segura</h2>
+        <p class="lead" style="margin-top:16px">ZenPos vive en la nube. No pierdes nada si se daña tu computadora o tu celular: tu información está respaldada y disponible donde estés.</p>
+        <div style="margin-top:26px">
+          <a href="https://wa.me/584129840048?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20la%20seguridad%20de%20ZenPos" target="_blank" rel="noopener" class="btn btn-ghost">Pregúntanos sobre seguridad</a>
+        </div>
+      </div>
+      <div class="sg-grid fi d2">
+        <div class="sg-card">
+          <div class="sg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="sg-h">Conexión cifrada</div>
+          <div class="sg-p">Todo viaja por conexión segura (HTTPS). Tus ventas y precios no quedan expuestos.</div>
+        </div>
+        <div class="sg-card">
+          <div class="sg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div>
+          <div class="sg-h">Respaldo en la nube</div>
+          <div class="sg-p">Tu información se guarda fuera de tu equipo. Si se daña, no pierdes tu negocio.</div>
+        </div>
+        <div class="sg-card">
+          <div class="sg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg></div>
+          <div class="sg-h">Roles y permisos</div>
+          <div class="sg-p">Decide qué puede ver y hacer cada empleado. Tú mantienes el control total.</div>
+        </div>
+        <div class="sg-card">
+          <div class="sg-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div>
+          <div class="sg-h">Registro de auditoría</div>
+          <div class="sg-p">Cada acción queda registrada: quién la hizo y cuándo. Nada se borra sin huella.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIO ===================== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head centered fi">
+      <h2 class="h2">Lo que dice quien ya usa ZenPos</h2>
+    </div>
+    <div class="test-card fi d1">
+      <div class="test-stars">★★★★★</div>
+      <p class="test-q">"Antes anotaba todo en papel. Ahora con ZenPos registro cada servicio con el nombre del técnico, el carro y el trabajo hecho. Al cierre del día sé exactamente cuánto entró por método de pago y cuánto le toca a cada mecánico."</p>
+      <div class="test-by">
+        <div class="test-av">Y</div>
+        <div><div class="test-nm">Yorman Castillo</div><div class="test-tp">Electroauto Falcón C.A. · Repuestos automotores</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRECIOS ===================== -->
+<section class="sec price-sec" id="precios">
+  <div class="wrap">
+    <div class="sec-head centered fi">
+      <div class="eyebrow centered">Precios</div>
+      <h2 class="h2">Planes simples, sin letra pequeña</h2>
+      <p class="lead" style="margin:16px auto 0">Cancela cuando quieras. Sin contrato, sin sorpresas, sin costos de instalación.</p>
+    </div>
+    <div class="bcv-banner fi">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+      <span>Tu suscripción es en USD y la pagas cómodamente <strong>en Bs a tasa BCV del día</strong>, o por Zelle, Binance o transferencia</span>
+    </div>
+    <div class="price-grid" style="grid-template-columns:minmax(0,600px);justify-content:center;max-width:none">
+      <div class="pcard hot fi">
+        <div class="hot-pill">★ Todo incluido + IA</div>
+        <div class="p-name">ZenPos Full</div>
+        <div class="p-amt"><span class="cur">$</span><span class="num">30</span><span class="per">/ mes</span></div>
+        <div class="p-desc">Un solo plan, todo tu negocio. Eliges tu rubro y viene listo — sin add-ons ni letra pequeña. <b>La inteligencia artificial incluida.</b></div>
+        <div class="p-sep"></div>
+        <ul class="p-feats">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><b>Inteligencia artificial incluida:</b> escanea facturas con una foto, sube pedidos de e-commerce con una captura y habla con tu negocio</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Punto de venta completo en Bs y $ con tasa BCV automática</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Inventario, clientes, fiados y cierre de caja</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Proveedores, compras, órdenes de compra y cuentas por pagar</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Reportes detallados con export · Catálogo por WhatsApp · Cotizaciones</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Múltiples usuarios y roles · Versión móvil (PWA)</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><b>Tu rubro incluido:</b> tienda, servicios/taller, agua y granel, recetas o licorería</li>
+        </ul>
+        <a href="https://wa.me/584129840048?text=Hola%2C%20quiero%20empezar%20con%20ZenPos%20(plan%20Full)" target="_blank" rel="noopener" class="btn btn-prim btn-block btn-lg">Empezar — primer mes gratis</a>
+        <div style="text-align:center;margin-top:12px;font-size:12.5px;color:var(--on-dark-fade)">Sin contrato · Cancela cuando quieras · Sin costo de instalación</div>
+      </div>
+    </div>
+
+    <div class="custom-band fi">
+      <div>
+        <div class="cb-t">👑 ¿Lo quieres a tu medida?</div>
+        <div class="cb-d">¿Tu negocio combina más de un rubro (tienda + servicios) o tienes varias sucursales? Licencia anual con descuento, personalización a tu marca, módulos a la carta y soporte prioritario. Ideal para negocios establecidos y cadenas.</div>
+      </div>
+      <a href="https://wa.me/584129840048?text=Hola%2C%20quiero%20ZenPos%20a%20la%20medida%20(cotizaci%C3%B3n)" target="_blank" rel="noopener" class="btn btn-prim" style="white-space:nowrap">Pedir cotización</a>
+    </div>
+
+    <p class="price-note fi">
+      <b>Suscripción en USD</b> · Pago en <b>Bs a tasa BCV</b> · Zelle · Binance · Transferencia · <b>Sin permanencia</b> · <b>30 días de prueba gratis</b>
+    </p>
+  </div>
+</section>
+
+<!-- ===================== GARANTÍA / SOPORTE ===================== -->
+<section class="assure-band">
+  <div class="wrap" style="padding-top:48px;padding-bottom:48px">
+    <div class="assure-grid">
+      <div class="assure-card fi">
+        <div class="assure-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div><div class="assure-h">Primer mes gratis</div><p class="assure-p">Prueba todo el sistema sin pagar nada y sin tarjeta. Si no te sirve, no pagas. Así de simple.</p></div>
+      </div>
+      <div class="assure-card fi d1">
+        <div class="assure-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+        <div><div class="assure-h">Soporte por WhatsApp</div><p class="assure-p">Te atendemos directo por WhatsApp, en español y de tú a tú. Te ayudamos a montar tu catálogo desde el primer día.</p></div>
+      </div>
+      <div class="assure-card fi d2">
+        <div class="assure-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <div><div class="assure-h">Listo en 1 día</div><p class="assure-p">Sin instalaciones eternas. Cargas tus productos, configuras tu recibo y empiezas a vender el mismo día.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="faq-inner">
+      <div class="fi">
+        <h2 class="h2">¿Tienes dudas?<br>Las resolvemos</h2>
+        <p class="lead" style="margin-top:16px">¿No encuentras tu respuesta? Escríbenos por WhatsApp y te contestamos de una.</p>
+        <a href="https://wa.me/584129840048?text=Hola%2C%20tengo%20una%20pregunta%20sobre%20ZenPos" target="_blank" rel="noopener" class="btn btn-prim" style="margin-top:24px">Hablar con un asesor</a>
+      </div>
+      <div class="faq-list fi d1">
+        <div class="faq-item">
+          <button type="button" class="faq-q">¿Qué hace la IA de ZenPos?<span class="faq-ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-in">Tres cosas concretas: escanea la factura de tu proveedor con una foto y registra la compra actualizando tu inventario; toma una captura de un pedido de e-commerce (Amazon, eBay) y arma una orden de compra lista para recibir; y responde en español cuando le preguntas cómo va tu negocio ("¿cuánto vendí?", "¿quién me debe?", "¿qué se me acaba?"). La IA lee y prepara, y tú confirmas antes de guardar.</div></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q">¿Cómo activo el escáner de facturas y la IA?<span class="faq-ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-in">La IA viene incluida en tu plan, sin costo extra. Nos escribes por WhatsApp y la activamos y configuramos contigo para que la uses bien desde el primer día. No tienes que instalar ni configurar nada complicado.</div></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q">¿Necesito internet o instalar algo?<span class="faq-ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-in">ZenPos funciona desde el navegador de tu computadora o tu celular, sin instalar nada, y necesita conexión a internet para trabajar (tus datos viven seguros en la nube). Si ya tienes una impresora térmica de 58 u 80 mm la conectas; si no, igual operas y envías el recibo digital.</div></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q">¿Sirve para mi tipo de negocio?<span class="faq-ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-in">ZenPos lo usan ferreterías, talleres, abastos, tiendas, farmacias, restaurantes, licorerías, panaderías y distribuidoras de agua. Tiene módulos por rubro (agua y granel, recetas, licorería, servicios y taller) que sumas cuando los necesitas. Si tienes dudas, escríbenos y lo revisamos contigo.</div></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q">¿Cuánto cuesta y cómo pago?<span class="faq-ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-in">Es un solo plan de $30/mes con todo incluido — la inteligencia artificial también. Eliges el rubro de tu negocio (tienda, servicios/taller, agua y granel, recetas o licorería) y viene listo. Pagas en dólares por Zelle, Binance o transferencia, o cómodamente en bolívares a tasa BCV. No hay contrato de permanencia y el primer mes es gratis.</div></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q">¿Mis datos están seguros?<span class="faq-ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+          <div class="faq-a"><div class="faq-a-in">Sí. Tu información viaja por conexión cifrada y se respalda en la nube, así que no la pierdes si se daña tu equipo. Además asignas roles y permisos a cada empleado y todo queda en el registro de auditoría.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section class="sec cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <div class="fi"><span class="chip on-dark"><span class="live"></span>Primer mes gratis</span></div>
+    <h2 class="h2 fi d1" style="margin-top:18px">Empieza a usar IA en tu negocio<br><span class="grad-text">desde hoy</span></h2>
+    <p class="cta-p fi d2">Sin tarjeta, sin instalación, sin complicaciones. Solo tú y tu negocio funcionando como una empresa de verdad.</p>
+    <div class="cta-btns fi d3">
+      <a href="https://wa.me/584129840048?text=Hola%2C%20quiero%20probar%20ZenPos" target="_blank" rel="noopener" class="btn btn-prim btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.12 1.532 5.849L0 24l6.334-1.51A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.664-.518-5.18-1.418l-.371-.22-3.762.897.937-3.665-.242-.381A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Escríbenos por WhatsApp
+      </a>
+      <a href="https://maroon.maxapex.net/apex/r/a266019/zenpos150" target="_blank" rel="noopener" class="btn btn-on-dark btn-lg">Ver demo en vivo</a>
+    </div>
+    <div class="cta-mini fi d4">
+      <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Sin tarjeta de crédito</span>
+      <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Listo en 1 día</span>
+      <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Soporte en español</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="#top"><img src="zenpos-logo.png" alt="ZenPos" style="height:40px;width:auto;display:block"></a>
+        <p>El primer POS venezolano con inteligencia artificial. Bolívares, dólares y tasa BCV automática.</p>
+        <p style="margin-top:10px;font-size:12.5px;color:var(--on-dark-fade)">ZenPos es un producto de <b style="color:var(--on-dark-mut)">Zentrix Software</b>, software venezolano para negocios que quieren crecer.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Producto</h4>
+        <a href="#ia">Inteligencia artificial</a>
+        <a href="#rubros">Módulos por rubro</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#precios">Precios</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </div>
+      <div class="foot-col">
+        <h4>Empezar</h4>
+        <a href="https://maroon.maxapex.net/apex/r/a266019/zenpos150" target="_blank" rel="noopener">Demo en vivo</a>
+        <a href="https://maroon.maxapex.net/apex/r/a266019/zenpos150" target="_blank" rel="noopener">Iniciar sesión</a>
+        <a href="https://wa.me/584129840048?text=Hola%2C%20quiero%20probar%20ZenPos%20gratis" target="_blank" rel="noopener">Probar gratis</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/584129840048" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="index.html">Zentrix Software</a>
+        <a href="https://zentrixsoftware.com" target="_blank" rel="noopener">zentrixsoftware.com</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Zentrix Software · Todos los derechos reservados</span>
+      <span>Hecho en Venezuela 🇻🇪 con <a href="https://zentrixsoftware.com" target="_blank" rel="noopener">Zentrix Software</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Datos estructurados: FAQ (resultados enriquecidos en Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Qué hace la IA de ZenPos?", "acceptedAnswer": { "@type": "Answer", "text": "Escanea la factura de tu proveedor con una foto y registra la compra actualizando el inventario; toma una captura de un pedido de e-commerce y arma una orden de compra lista para recibir; y responde en español cuando le preguntas cómo va tu negocio. La IA lee y prepara, y tú confirmas antes de guardar." } },
+    { "@type": "Question", "name": "¿Cómo activo el escáner de facturas y la IA?", "acceptedAnswer": { "@type": "Answer", "text": "La IA viene incluida en tu plan, sin costo extra. Nos escribes por WhatsApp y la activamos y configuramos contigo para que la uses desde el primer día." } },
+    { "@type": "Question", "name": "¿Necesito internet o instalar algo?", "acceptedAnswer": { "@type": "Answer", "text": "ZenPos funciona desde el navegador de tu computadora o tu celular, sin instalar nada, y necesita conexión a internet porque tus datos viven seguros en la nube. Si tienes una impresora térmica de 58 u 80 mm la conectas; si no, igual operas y envías el recibo digital." } },
+    { "@type": "Question", "name": "¿Sirve para mi tipo de negocio?", "acceptedAnswer": { "@type": "Answer", "text": "ZenPos lo usan ferreterías, talleres, abastos, tiendas, farmacias, restaurantes, licorerías, panaderías y distribuidoras de agua. Tiene módulos por rubro (agua y granel, recetas, licorería, servicios y taller) que sumas cuando los necesitas." } },
+    { "@type": "Question", "name": "¿Cuánto cuesta y cómo pago?", "acceptedAnswer": { "@type": "Answer", "text": "Es un solo plan de 30 USD al mes con todo incluido, la inteligencia artificial también. Eliges el rubro de tu negocio y viene listo. Pagas por Zelle, Binance o transferencia, o en bolívares a tasa BCV. Sin permanencia y con el primer mes gratis." } },
+    { "@type": "Question", "name": "¿Mis datos están seguros?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Tu información viaja por conexión cifrada y se respalda en la nube, así que no la pierdes si se daña tu equipo. Puedes asignar roles y permisos y todo queda en el registro de auditoría." } }
+  ]
+}
+</script>
+
+<script>
+/* ---- Nav shadow on scroll ---- */
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+/* ---- Marquee build (duplicated for seamless loop) ---- */
+const mqItems = ['Escáner de facturas con IA','Captura de pedidos e-commerce','Habla con tu negocio','Punto de venta','Inventario valorado','Cierre de caja','Bolívares y dólares','Pago móvil','Clientes y fiados','Agua y granel','Recetas que calculan costo','Licorería y bar','Talleres y órdenes de trabajo','Catálogo por WhatsApp','Cotizaciones en PDF','Cuentas por pagar','Órdenes de compra','Devoluciones','Reportes con export','Auditoría completa'];
+const mq = document.getElementById('mq');
+const buildMq = () => mqItems.map(t => `<div class="mqi"><b>·</b> ${t}</div>`).join('');
+mq.innerHTML = buildMq() + buildMq();
+
+/* ---- Scroll reveal (robusto: el reveal solo realza; nunca deja el contenido oculto) ---- */
+const revealAll = () => {
+  document.querySelectorAll('.fi:not(.in)').forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 40) el.classList.add('in');
+  });
+};
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.08, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.fi').forEach(el => {
+  if(el.closest('.hero') || el.closest('.nav')) el.classList.add('in'); else io.observe(el);
+});
+/* Failsafe continuo: en cada scroll/resize revela lo que ya entro al viewport (nunca queda oculto) */
+window.addEventListener('scroll', revealAll, {passive:true});
+window.addEventListener('resize', revealAll);
+window.addEventListener('load', () => setTimeout(revealAll, 100));
+revealAll();
+/* Failsafe DURO (leccion landing 2026-07-08: el reveal realza, NUNCA deja contenido oculto):
+   pase lo que pase con el observer, tras 1.8s se revela todo .fi que quede oculto. */
+setTimeout(function(){ document.querySelectorAll('.fi:not(.in)').forEach(function(el){ el.classList.add('in'); }); }, 1800);
+
+/* ---- FAQ accordion ---- */
+document.querySelectorAll('.faq-item').forEach(item => {
+  const q = item.querySelector('.faq-q');
+  const a = item.querySelector('.faq-a');
+  q.addEventListener('click', () => {
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(o => {
+      o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight = null;
+    });
+    if(!open){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+  });
+});
+
+/* ---- Smooth anchor offset for sticky nav ---- */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const id = a.getAttribute('href');
+    if(id.length > 1){
+      const t = document.querySelector(id);
+      if(t){ e.preventDefault(); const y = t.getBoundingClientRect().top + window.scrollY - 76; window.scrollTo({top:y, behavior:'smooth'}); }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
