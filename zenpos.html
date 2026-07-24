@@ -6,7 +6,7 @@
 <script>document.documentElement.className+=' js'</script>
 <title>ZenPos · El primer software con IA para tu negocio venezolano</title>
 <meta name="description" content="ZenPos es el primer POS venezolano con inteligencia artificial: escanea tus facturas de proveedor con una foto, sube tus pedidos de e-commerce con una captura y pregúntale a tu negocio en español. En bolívares y dólares. Un solo plan de $30/mes con todo incluido e IA, primer mes gratis.">
-<link rel="icon" type="image/png" href="zenpos-iso.png">
+<link rel="icon" type="image/svg+xml" href="isotipo-zenpos.svg">
 <meta name="google-site-verification" content="7A7v_raN6ymHx_1NmLOYWqeJCcrikAWYVYDDerzobQ0">
 <link rel="canonical" href="https://zentrixsoftware.com/zenpos.html">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -81,19 +81,68 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--on-dark);font-family:var(--font);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* ── Botón Flotante ── */
+.float-cta{position:fixed;bottom:30px;right:30px;width:60px;height:60px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(7,166,107,.35);cursor:pointer;transition:all .3s ease;z-index:99;animation:bounce 2s infinite}
+.float-cta:hover{transform:scale(1.1);box-shadow:0 12px 32px rgba(7,166,107,.5)}
+.float-cta svg{width:30px;height:30px;color:#fff}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 a{color:inherit;text-decoration:none}
 ul{list-style:none}
 img,svg{display:block}
 button{font-family:var(--font);cursor:pointer}
 :focus-visible{outline:2px solid var(--green);outline-offset:2px;border-radius:4px}
 
+/* ── Animaciones ── */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes scaleIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+@keyframes glow{0%,100%{box-shadow:0 0 20px rgba(7,166,107,.1)}50%{box-shadow:0 0 40px rgba(7,166,107,.2)}}
+
+/* ── Secciones Alternas ── */
+.sec-light{background:#F8F7F3 !important;color:#000 !important}
+.sec-light *{color:#1a1a1a !important}
+.sec-light h2{color:#000 !important}
+.sec-light .h2{color:#000 !important;font-weight:800}
+.sec-light .eyebrow{color:var(--green) !important}
+.sec-light .lead{color:#222 !important}
+.sec-light p{color:#1a1a1a !important}
+.sec-light .u-h{color:#000 !important;font-weight:800}
+.sec-light .u-p{color:#222 !important}
+.sec-light .u-badge{color:var(--green) !important}
+.sec-light a{color:var(--green) !important}
+.sec-light .ucard{background:#fff;border-color:rgba(7,166,107,.1);color:#000}
+.sec-light .ucard *{color:#000 !important}
+.sec-light .ucard .u-h{color:#000 !important;font-weight:800}
+.sec-light .ucard .u-p{color:#222 !important}
+.sec-light .ucard:hover{background:#fbfbfb;border-color:var(--green);transform:translateY(-4px);box-shadow:0 12px 40px rgba(7,166,107,.15)}
+.sec-light .u-visual{background:#f0f8f4 !important;border-color:var(--green) !important}
+.sec-light .u-visual .u-row .k{color:#333 !important}
+.sec-light .u-visual .u-row .v{color:#000 !important;font-weight:700}
+.sec-light .tank-lbl{color:#333 !important}
+.sec-light .tank-lbl span{color:#333 !important}
+.sec-light .btn-prim{background:var(--green);color:#fff}
+.sec-light .cmp-table{border-color:rgba(7,166,107,.2)}
+.sec-light .cmp-row{border-color:rgba(7,166,107,.1)}
+.sec-light .cmp-cell{color:#000 !important}
+.sec-light .cmp-cell.feat-name{color:#000 !important;font-weight:600}
+.sec-light .cmp-cell.old{color:#333 !important}
+.sec-light .cmp-cell.zen{background:rgba(7,166,107,.08) !important;color:#000 !important}
+.sec-light .cmp-head-old{color:#333 !important}
+.sec-light .cmp-head-zen{color:var(--green) !important}
+.sec-light .bcv-banner{background:rgba(7,166,107,.1) !important;border-color:var(--green) !important;color:#000 !important}
+.sec-light .bcv-banner strong{color:#000 !important}
+
 /* ── Wrap ── */
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
 
 /* ── Buttons ── */
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font);font-weight:700;border-radius:10px;border:none;cursor:pointer;transition:transform .15s var(--ease-quint),background .15s,box-shadow .15s,border-color .15s;white-space:nowrap;text-decoration:none}
-.btn-prim{background:var(--green);color:#fff;padding:11px 22px;font-size:14px}
-.btn-prim:hover{background:var(--green-h);transform:translateY(-1px);box-shadow:0 8px 24px rgba(7,166,107,.35)}
+.btn-prim{background:var(--green);color:#fff;padding:11px 22px;font-size:14px;box-shadow:0 4px 15px rgba(7,166,107,.25);transition:all .3s cubic-bezier(.22,1,.36,1)}
+.btn-prim:hover{background:var(--green-h);transform:translateY(-3px);box-shadow:0 16px 40px rgba(7,166,107,.5)}
+.cta .btn-prim{padding:16px 40px;font-size:16px;box-shadow:0 8px 24px rgba(7,166,107,.35)}
+.cta .btn-prim:hover{box-shadow:0 20px 50px rgba(7,166,107,.6);transform:translateY(-4px)}
 .btn:active{transform:translateY(0) scale(.97);transition-duration:.08s}
 .btn-ghost{background:transparent;color:var(--on-dark);border:1.5px solid var(--border2);padding:10px 20px;font-size:14px}
 .btn-ghost:hover{border-color:var(--on-dark);background:rgba(255,255,255,.06)}
@@ -103,21 +152,25 @@ button{font-family:var(--font);cursor:pointer}
 .btn-block{width:100%;justify-content:center;padding:13px;font-size:14px}
 
 /* ── Chip ── */
-.chip{display:inline-flex;align-items:center;gap:7px;background:var(--green-dim);border:1px solid var(--green-ring);color:var(--green);font-size:12.5px;font-weight:600;padding:5px 13px;border-radius:100px}
+.chip{display:inline-flex;align-items:center;gap:7px;background:var(--green-dim);border:1px solid var(--green-ring);color:var(--green);font-size:12.5px;font-weight:600;padding:5px 13px;border-radius:100px;transition:all .3s ease}
+.chip:hover{background:var(--green);color:#fff;box-shadow:0 8px 20px rgba(7,166,107,.3);transform:scale(1.05)}
 .chip.on-dark{background:rgba(250,248,242,.08);border-color:rgba(250,248,242,.16);color:var(--on-dark)}
+.cta .chip{padding:8px 16px;font-size:13px;font-weight:700;animation:fadeInUp .6s ease-out forwards;background:rgba(7,166,107,.2);border:1.5px solid var(--green);box-shadow:0 4px 16px rgba(7,166,107,.2)}
 .live{width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 var(--green-ring)}50%{opacity:.8;box-shadow:0 0 0 5px transparent}}
 
 /* ── Nav ── */
-.nav{position:sticky;top:0;z-index:100;padding:0;transition:background .2s,border-color .2s}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
-.nav.scrolled{background:rgba(6,17,12,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav{position:sticky;top:0;z-index:100;padding:0;transition:all .3s ease;box-shadow:0 2px 12px rgba(0,0,0,.1)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:88px;gap:20px}
+.nav.scrolled{background:rgba(6,17,12,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:0 4px 20px rgba(7,166,107,.1)}
 .brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .brand svg,.brand-logo{width:30px;height:30px;flex-shrink:0}
 .brand-name{font-size:17px;font-weight:800;color:var(--on-dark);letter-spacing:-.3px}
 .nav-links{display:flex;align-items:center;gap:2px}
-.nav-link{padding:7px 12px;border-radius:8px;font-size:13.5px;font-weight:500;color:var(--on-dark-mut);transition:color .12s,background .12s}
-.nav-link:hover{color:var(--on-dark);background:var(--surface)}
+.nav-link{padding:7px 12px;border-radius:8px;font-size:13.5px;font-weight:500;color:var(--on-dark-mut);transition:all .3s ease;position:relative}
+.nav-link::after{content:'';position:absolute;bottom:0;left:50%;width:0;height:2px;background:var(--green);transition:all .3s ease;transform:translateX(-50%)}
+.nav-link:hover{color:var(--on-dark);background:rgba(7,166,107,.1)}
+.nav-link:hover::after{width:100%}
 .nav-cta{display:flex;align-items:center;gap:10px;flex-shrink:0}
 
 /* ── Typography ── */
@@ -132,7 +185,7 @@ button{font-family:var(--font);cursor:pointer}
 .fi{opacity:1;transform:none;transition:opacity .6s var(--ease-quint),transform .6s var(--ease-quint)}
 html.js .fi:not(.in){opacity:0;transform:translateY(18px)}
 .fi.in{opacity:1;transform:none}
-.d1{transition-delay:.09s}.d2{transition-delay:.18s}.d3{transition-delay:.27s}.d4{transition-delay:.36s}
+.d1{animation-delay:.09s}.d2{animation-delay:.18s}.d3{animation-delay:.27s}.d4{animation-delay:.36s}.d5{animation-delay:.45s}.d6{animation-delay:.54s}
 @media(prefers-reduced-motion:reduce){html.js .fi:not(.in){opacity:1;transform:none}.fi{transition:none}.live{animation:none}.mq{animation:none}*{scroll-behavior:auto}}
 
 /* ── Section ── */
@@ -191,6 +244,21 @@ html.js .fi:not(.in){opacity:0;transform:translateY(18px)}
 .fb-t1{font-size:12px;font-weight:700;color:var(--on-dark)}
 .fb-t2{font-size:10.5px;color:var(--on-dark-fade)}
 
+/* ── Clientes/Empresas ── */
+.clients-section{background:rgba(7,166,107,.06);padding:40px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.clients-wrap{display:flex;align-items:center;gap:40px;justify-content:center;flex-wrap:wrap}
+.client-badge{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:12px;padding:16px 24px;display:flex;align-items:center;gap:12px;transition:all .3s ease;font-size:13px;color:var(--on-dark-mut);white-space:nowrap;animation:fadeInUp .6s ease-out forwards}
+.client-badge:hover{border-color:var(--green);transform:translateY(-2px);box-shadow:0 8px 20px rgba(7,166,107,.15)}
+.client-badge strong{color:var(--on-dark);font-weight:600}
+
+/* ── Métricas ── */
+.metrics-section{padding:60px 0}
+.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:40px}
+.metric-card{text-align:center;padding:30px;background:rgba(7,166,107,.06);border:1px solid var(--border);border-radius:var(--r);transition:all .3s ease;animation:fadeInUp .6s ease-out forwards}
+.metric-card:hover{border-color:var(--green);transform:translateY(-4px);box-shadow:0 12px 30px rgba(7,166,107,.2)}
+.metric-card .number{font-size:48px;font-weight:800;color:var(--green);margin-bottom:8px}
+.metric-card .label{font-size:14px;color:var(--on-dark-mut);line-height:1.5}
+
 /* ── Marquee ── */
 .mq-wrap{overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:13px 0;background:rgba(7,166,107,.04)}
 .mq{display:flex;gap:0;animation:mq 34s linear infinite;width:max-content}
@@ -205,18 +273,25 @@ html.js .fi:not(.in){opacity:0;transform:translateY(18px)}
 
 /* ── Grid de tarjetas de módulo (IA + rubros) ── */
 .u-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.ucard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:24px;transition:border-color .2s,transform .2s;display:flex;flex-direction:column;gap:16px}
-.ucard:hover{border-color:rgba(255,255,255,.16);transform:translateY(-2px)}
-.ucard.feat{grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
-.u-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--green);background:var(--green-dim);border:1px solid var(--green-ring);padding:4px 10px;border-radius:100px;margin-bottom:10px}
-.u-ic{font-size:30px;margin-bottom:8px;display:block}
-.u-h{font-size:17px;font-weight:700;color:var(--on-dark);line-height:1.3}
-.u-p{font-size:13.5px;color:var(--on-dark-mut);margin-top:8px;line-height:1.62}
+.ucard{background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1.5px solid rgba(7,166,107,.15);border-radius:18px;padding:32px;transition:all .4s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column;gap:18px;animation:fadeInUp .6s ease-out forwards;position:relative}
+.ucard:hover{border-color:var(--green);transform:translateY(-8px);box-shadow:0 24px 60px rgba(7,166,107,.25)}
+.ucard.feat{grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:linear-gradient(135deg,rgba(7,166,107,.08),rgba(7,166,107,.02));border:2px solid rgba(7,166,107,.2)}
+.ucard.feat:hover{border-color:var(--green);box-shadow:0 32px 80px rgba(7,166,107,.3),inset 0 1px 0 rgba(7,166,107,.15)}
+.u-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green);background:var(--green-dim);border:1.5px solid var(--green);padding:6px 12px;border-radius:100px;margin-bottom:12px;transition:all .3s ease}
+.ucard:hover .u-badge{background:var(--green);color:#fff;box-shadow:0 6px 16px rgba(7,166,107,.3)}
+.u-ic{font-size:42px;margin-bottom:12px;display:block;transition:transform .3s ease;filter:drop-shadow(0 4px 12px rgba(7,166,107,.2))}
+.ucard:hover .u-ic{transform:scale(1.15) translateY(-4px)}
+.u-h{font-size:18px;font-weight:800;color:var(--on-dark);line-height:1.25;transition:color .3s ease}
+.ucard:hover .u-h{color:var(--green)}
+.u-p{font-size:13.5px;color:var(--on-dark-mut);margin-top:10px;line-height:1.65}
 .u-p strong{color:var(--on-dark);font-weight:600}
-.u-visual{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:8px}
-.u-row{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;gap:12px}
-.u-row .k{color:var(--on-dark-mut)}
-.u-row .v{color:var(--on-dark);font-weight:600;text-align:right;white-space:nowrap}
+.u-visual{background:linear-gradient(135deg,rgba(7,166,107,.12),rgba(7,166,107,.04));border:1.5px solid rgba(7,166,107,.2);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:all .3s ease;box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.ucard:hover .u-visual{border-color:var(--green);background:linear-gradient(135deg,rgba(7,166,107,.16),rgba(7,166,107,.06));box-shadow:inset 0 1px 0 rgba(7,166,107,.2),0 8px 24px rgba(7,166,107,.15)}
+.u-row{display:flex;justify-content:space-between;align-items:center;font-size:13px;gap:12px;padding:10px 0;transition:color .2s ease}
+.ucard:hover .u-row{color:var(--on-dark)}
+.u-row .k{color:var(--on-dark-mut);transition:color .2s ease}
+.ucard:hover .u-row .k{color:var(--on-dark-fade)}
+.u-row .v{color:var(--green);font-weight:700;text-align:right;white-space:nowrap}
 .cart-sep{height:1px;background:var(--border);margin:2px 0}
 .tank{display:flex;gap:10px;margin-bottom:8px;align-items:flex-end;height:78px}
 .tank-col{flex:1;background:rgba(255,255,255,.06);border-radius:4px;position:relative;overflow:hidden}
@@ -284,14 +359,17 @@ html.js .fi:not(.in){opacity:0;transform:translateY(18px)}
 /* ── Security ── */
 .sg-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .sg-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.sg-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);padding:18px}
+.sg-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);padding:18px;transition:all .3s ease;animation:fadeInUp .6s ease-out forwards}
+.sg-card:hover{border-color:var(--green);transform:translateY(-4px);box-shadow:0 10px 30px rgba(7,166,107,.15)}
 .sg-ic{width:36px;height:36px;border-radius:9px;background:var(--green-dim);display:flex;align-items:center;justify-content:center;color:var(--green);margin-bottom:10px}
 .sg-h{font-size:14px;font-weight:700;margin-bottom:4px}
 .sg-p{font-size:12.5px;color:var(--on-dark-mut);line-height:1.5}
 .sg-band{background:linear-gradient(180deg,var(--bg),#061B0E 50%,var(--bg))}
 
 /* ── Testimonials ── */
-.test-card{background:#0E2018;border:1px solid rgba(7,166,107,.18);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:16px;max-width:680px;margin:0 auto}
+.testimonials-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.test-card{background:#0E2018;border:1px solid rgba(7,166,107,.18);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:16px;transition:all .3s ease;animation:scaleIn .6s ease-out forwards}
+.test-card:hover{border-color:var(--green);transform:translateY(-4px);box-shadow:0 15px 40px rgba(7,166,107,.25)}
 .test-stars{color:var(--yellow);font-size:15px;letter-spacing:2px}
 .test-q{font-size:16px;color:var(--on-dark-mut);line-height:1.7}
 .test-by{display:flex;align-items:center;gap:12px}
@@ -301,12 +379,23 @@ html.js .fi:not(.in){opacity:0;transform:translateY(18px)}
 
 /* ── Pricing ── */
 .price-sec{background:linear-gradient(180deg,var(--bg) 0%,#071510 50%,var(--bg) 100%)}
+.price-sec.sec-light{background:#F8F7F3 !important}
+.price-sec.sec-light .pcard{background:#fff;border-color:rgba(7,166,107,.15);color:#000 !important}
+.price-sec.sec-light .pcard *{color:#1a1a1a !important}
+.price-sec.sec-light .pcard .p-name{color:#000 !important;font-weight:600}
+.price-sec.sec-light .pcard .p-desc{color:#333 !important}
+.price-sec.sec-light .pcard .p-amt .num{color:#000 !important;font-weight:800}
+.price-sec.sec-light .pcard .p-amt .cur{color:var(--green) !important;font-weight:600}
+.price-sec.sec-light .pcard .p-feats li{color:#333 !important}
+.price-sec.sec-light .pcard .p-feats li b{color:#000 !important;font-weight:600}
+.price-sec.sec-light .pcard:hover{border-color:var(--green);box-shadow:0 15px 40px rgba(7,166,107,.18)}
 .bcv-banner{display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(7,166,107,.1);border:1px solid var(--green-ring);border-radius:12px;padding:14px 20px;margin-bottom:34px;font-size:14px;color:var(--on-dark-mut);text-align:center;flex-wrap:wrap}
 .bcv-banner strong{color:var(--on-dark)}
 .bcv-banner svg{color:var(--green);flex-shrink:0}
 .price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:22px}
-.pcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:28px;position:relative;display:flex;flex-direction:column}
-.pcard.hot{background:#0E2018;border-color:rgba(7,166,107,.25);box-shadow:0 0 40px rgba(7,166,107,.08)}
+.pcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:28px;position:relative;display:flex;flex-direction:column;transition:all .3s ease;animation:fadeInUp .6s ease-out forwards}
+.pcard:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(7,166,107,.2)}
+.pcard.hot{background:#0E2018;border-color:rgba(7,166,107,.25);box-shadow:0 0 40px rgba(7,166,107,.15);animation:glow 3s ease-in-out infinite}
 .hot-pill{display:inline-flex;align-items:center;font-size:11px;font-weight:700;color:var(--green);background:var(--green-dim);border:1px solid var(--green-ring);padding:4px 11px;border-radius:100px;margin-bottom:16px;align-self:flex-start}
 .p-new{display:inline-block;background:rgba(7,166,107,.16);color:var(--green);font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:20px;margin-bottom:8px;align-self:flex-start}
 .p-name{font-size:15px;font-weight:700;color:var(--on-dark-mut);margin-bottom:8px}
@@ -366,15 +455,21 @@ html.js .fi:not(.in){opacity:0;transform:translateY(18px)}
 .faq-a-in{padding:0 0 18px;font-size:14px;color:var(--on-dark-mut);line-height:1.7}
 
 /* ── CTA ── */
-.cta{position:relative;text-align:center;padding:96px 0}
-.cta-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(7,166,107,.12) 0%,transparent 70%)}
+.cta{position:relative;text-align:center;padding:120px 0;overflow:hidden}
+.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 100% 80% at 50% 50%,rgba(7,166,107,.18) 0%,rgba(7,166,107,.08) 40%,transparent 70%);z-index:0;animation:pulse 4s ease-in-out infinite}
+.cta-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 50% 50%,rgba(7,166,107,.15) 0%,transparent 70%);z-index:0}
 .cta .wrap{position:relative;z-index:1}
-.cta .h2{max-width:600px;margin:0 auto}
-.cta-p{max-width:500px;margin:16px auto 0;color:var(--on-dark-mut)}
-.cta-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px}
-.cta-mini{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:20px}
-.cta-mini span{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--on-dark-fade)}
-.cta-mini svg{color:var(--green);flex-shrink:0}
+.cta .h2{max-width:700px;margin:0 auto;font-size:clamp(36px,6vw,72px);line-height:1.1;letter-spacing:-.04em}
+.cta .h2 br + *{color:var(--green)}
+.cta-p{max-width:550px;margin:20px auto 0;color:var(--on-dark-mut);font-size:clamp(15px,1.8vw,18px);line-height:1.7}
+.cta-btns{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:40px}
+.cta-btns .btn{padding:16px 36px;font-size:16px;font-weight:700;animation:fadeInUp .8s ease-out .2s forwards;opacity:0}
+.cta-btns .btn:nth-child(1){animation-delay:.3s}
+.cta-btns .btn:nth-child(2){animation-delay:.4s}
+.cta-mini{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:32px;animation:fadeInUp .8s ease-out .5s forwards;opacity:0}
+.cta-mini span{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--on-dark-fade);font-weight:500}
+.cta-mini svg{color:var(--green);flex-shrink:0;width:20px;height:20px}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
 
 /* ── Footer ── */
 footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px}
@@ -409,6 +504,10 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
   .ia-addon .add-cta{width:100%;justify-content:center;margin-top:6px}
   .assure-grid{grid-template-columns:1fr}
   .foot-top{grid-template-columns:1fr 1fr}
+  .metrics-grid{grid-template-columns:1fr}
+  .clients-wrap{gap:20px}
+  .client-badge{font-size:12px;padding:12px 16px}
+  .float-cta{bottom:20px;right:20px;width:54px;height:54px}
 }
 @media(max-width:480px){
   .wrap{padding:0 16px}
@@ -428,10 +527,10 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
 <header class="nav" id="nav">
   <div class="wrap">
     <a class="brand" href="#top">
-      <img src="zenpos-logo.png" alt="ZenPos, producto de Zentrix Software" style="height:36px;width:auto;display:block">
+      <img src="LOGO-zenpos-WEBSF.svg" alt="ZenPos, producto de Zentrix Software" style="height:70px;width:auto;display:block">
     </a>
     <nav class="nav-links">
-      <a href="index.html" class="nav-link">Zentrix Software</a>
+      <!-- <a href="index.html" class="nav-link">Zentrix Software</a> -->
       <a href="#ia" class="nav-link">IA</a>
       <a href="#rubros" class="nav-link">Tu rubro</a>
       <a href="#funciones" class="nav-link">Funciones</a>
@@ -533,6 +632,21 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
   <div class="mq" id="mq"></div>
 </div>
 
+<!-- ===================== CLIENTES ===================== -->
+<div class="clients-section">
+  <div class="wrap">
+    <p style="text-align:center;color:var(--on-dark-fade);font-size:13px;margin-bottom:24px;text-transform:uppercase;letter-spacing:.08em;font-weight:600">Usados por negocios en toda Venezuela</p>
+    <div class="clients-wrap">
+      <div class="client-badge">📦 <strong>Tiendas</strong></div>
+      <div class="client-badge">🔧 <strong>Talleres</strong></div>
+      <div class="client-badge">🍞 <strong>Panaderías</strong></div>
+      <div class="client-badge">💧 <strong>Distribuidoras</strong></div>
+      <div class="client-badge">🍺 <strong>Licorerías</strong></div>
+      <div class="client-badge">⚡ <strong>Servicios</strong></div>
+    </div>
+  </div>
+</div>
+
 <!-- ===================== IA (PROTAGONISTA) ===================== -->
 <section class="sec ia-sec" id="ia">
   <div class="ia-sec-bg"></div>
@@ -564,10 +678,19 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
 
       <!-- Producto IA 2: Captura e-commerce -->
       <div class="ucard fi">
-        <div class="u-badge"><span class="live"></span>Disponible</div>
-        <span class="u-ic">🛍️</span>
-        <h3 class="u-h">Sube tus pedidos de e-commerce con una captura</h3>
-        <p class="u-p">Compras en Amazon, eBay o Shein para revender. Le pasas la captura del pedido y la IA arma una <strong>orden de compra en espera</strong>, lista para recibir cuando llegue la mercancía. Sin transcribir nada a mano.</p>
+        <div>
+          <div class="u-badge"><span class="live"></span>Disponible</div>
+          <span class="u-ic">🛍️</span>
+          <h3 class="u-h">Sube tus pedidos de e-commerce con una captura</h3>
+          <p class="u-p">Compras en Amazon, eBay o Shein para revender. Le pasas la captura del pedido y la IA arma una <strong>orden de compra en espera</strong>, lista para recibir cuando llegue la mercancía. Sin transcribir nada a mano.</p>
+        </div>
+        <div class="u-visual">
+          <div class="u-row"><span class="k">📦 Plataforma<\span><span class="v" style="color:var(--green)">Amazon USA</span></div>
+          <div class="u-row"><span class="k">Productos leídos</span><span class="v">3 artículos</span></div>
+          <div class="cart-sep"></div>
+          <div class="u-row"><span class="k">Costo total importación</span><span class="v">$156,80</span></div>
+          <div class="u-row"><span class="k">Estado</span><span class="v" style="color:var(--yellow)">En espera de recibir</span></div>
+        </div>
       </div>
 
       <!-- Producto IA 3: Habla con tu negocio -->
@@ -606,7 +729,7 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
 </section>
 
 <!-- ===================== RUBROS ===================== -->
-<section class="sec" id="rubros">
+<section class="sec sec-light" id="rubros">
   <div class="wrap">
     <div class="sec-head fi">
       <div class="eyebrow">ZenPos habla tu rubro</div>
@@ -624,13 +747,36 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
           <p class="u-p">Controla el inventario en litros, registra recargas por tanque, aplica factor de merma y descuenta automáticamente al vender. Pensado para recargas de agua potable y distribuidoras. Ningún otro POS venezolano lo tiene.</p>
         </div>
         <div class="u-visual">
-          <div class="tank">
-            <div class="tank-col"><div class="tank-fill" style="height:72%"></div></div>
-            <div class="tank-col"><div class="tank-fill" style="height:48%"></div></div>
-            <div class="tank-col"><div class="tank-fill" style="height:88%"></div></div>
-            <div class="tank-col"><div class="tank-fill" style="height:34%"></div></div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;align-items:flex-end;height:140px;margin-bottom:16px">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex:1">
+              <div style="width:100%;background:rgba(7,166,107,.1);border:2px solid rgba(7,166,107,.3);border-radius:8px;height:100px;display:flex;align-items:flex-end">
+                <div style="width:100%;height:72%;background:linear-gradient(to top,var(--green),rgba(7,166,107,.6));border-radius:6px;margin:2px"></div>
+              </div>
+              <span style="font-size:11px;font-weight:600;color:#333">72%</span>
+              <span style="font-size:10px;color:#666">Tanque 1</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex:1">
+              <div style="width:100%;background:rgba(7,166,107,.1);border:2px solid rgba(7,166,107,.3);border-radius:8px;height:100px;display:flex;align-items:flex-end">
+                <div style="width:100%;height:48%;background:linear-gradient(to top,var(--green),rgba(7,166,107,.6));border-radius:6px;margin:2px"></div>
+              </div>
+              <span style="font-size:11px;font-weight:600;color:#333">48%</span>
+              <span style="font-size:10px;color:#666">Tanque 2</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex:1">
+              <div style="width:100%;background:rgba(7,166,107,.1);border:2px solid rgba(7,166,107,.3);border-radius:8px;height:100px;display:flex;align-items:flex-end">
+                <div style="width:100%;height:88%;background:linear-gradient(to top,var(--green),rgba(7,166,107,.6));border-radius:6px;margin:2px"></div>
+              </div>
+              <span style="font-size:11px;font-weight:600;color:#333">88%</span>
+              <span style="font-size:10px;color:#666">Tanque 3</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex:1">
+              <div style="width:100%;background:rgba(7,166,107,.1);border:2px solid rgba(7,166,107,.3);border-radius:8px;height:100px;display:flex;align-items:flex-end">
+                <div style="width:100%;height:34%;background:linear-gradient(to top,var(--green),rgba(7,166,107,.6));border-radius:6px;margin:2px"></div>
+              </div>
+              <span style="font-size:11px;font-weight:600;color:#333">34%</span>
+              <span style="font-size:10px;color:#666">Tanque 4</span>
+            </div>
           </div>
-          <div class="tank-lbl"><span>Tanque 1</span><span>Tanque 2</span><span>Tanque 3</span><span>Tanque 4</span></div>
           <div class="u-row"><span class="k">Inventario total</span><span class="v">3.420 L</span></div>
           <div class="u-row"><span class="k">Vendido hoy</span><span class="v" style="color:var(--green)">680 L</span></div>
         </div>
@@ -663,10 +809,19 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
 
       <!-- Licorería -->
       <div class="ucard fi">
-        <div class="u-badge"><span class="live"></span>Disponible</div>
-        <span class="u-ic">🍺</span>
-        <h3 class="u-h">Licorería y bar</h3>
-        <p class="u-p">Cuenta abierta por mesa o cliente (se va anotando y se cobra al final) y prepago (el cliente paga por adelantado y va consumiendo). El inventario se descuenta al cobrar. Para licorerías, bares y tascas.</p>
+        <div>
+          <div class="u-badge"><span class="live"></span>Disponible</div>
+          <span class="u-ic">🍺</span>
+          <h3 class="u-h">Licorería y bar</h3>
+          <p class="u-p">Cuenta abierta por mesa o cliente (se va anotando y se cobra al final) y prepago (el cliente paga por adelantado y va consumiendo). El inventario se descuenta al cobrar. Para licorerías, bares y tascas.</p>
+        </div>
+        <div class="u-visual">
+          <div class="u-row"><span class="k">🍷 Mesa 3<\span><span class="v" style="color:var(--green)">Abierta</span></div>
+          <div class="u-row"><span class="k">Consumo acumulado</span><span class="v">Bs 245.000</span></div>
+          <div class="cart-sep"></div>
+          <div class="u-row"><span class="k">👤 Cliente Préstamo<\span><span class="v" style="color:var(--yellow)">Bs 480.000 debe</span></div>
+          <div class="u-row"><span class="k">Método de pago</span><span class="v">Crédito semanal</span></div>
+        </div>
       </div>
 
       <!-- Servicios / taller (destacado) -->
@@ -688,10 +843,19 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
 
       <!-- Catálogo público -->
       <div class="ucard fi">
-        <div class="u-badge"><span class="live"></span>Vende por WhatsApp</div>
-        <span class="u-ic">📱</span>
-        <h3 class="u-h">Catálogo público con link de WhatsApp</h3>
-        <p class="u-p">Publica los productos que quieras en una página web propia (sin login) y compártela por WhatsApp, Instagram o Facebook. Tu cliente arma el pedido y te llega directo. Sin comisiones ni exponer tus costos.</p>
+        <div>
+          <div class="u-badge"><span class="live"></span>Vende por WhatsApp</div>
+          <span class="u-ic">📱</span>
+          <h3 class="u-h">Catálogo público con link de WhatsApp</h3>
+          <p class="u-p">Publica los productos que quieras en una página web propia (sin login) y compártela por WhatsApp, Instagram o Facebook. Tu cliente arma el pedido y te llega directo. Sin comisiones ni exponer tus costos.</p>
+        </div>
+        <div class="u-visual">
+          <div class="u-row"><span class="k">🔗 Link de la tienda<\span><span class="v" style="color:var(--green)">zenpos.store/mitienda</span></div>
+          <div class="u-row"><span class="k">Productos publicados</span><span class="v">47 artículos</span></div>
+          <div class="cart-sep"></div>
+          <div class="u-row"><span class="k">Visitas este mes</span><span class="v" style="color:var(--green)">1.240</span></div>
+          <div class="u-row"><span class="k">Órdenes recibidas</span><span class="v" style="color:var(--green)">68</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -789,7 +953,7 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
       <div class="cmp-row head">
         <div class="cmp-cell feat-name"></div>
         <div class="cmp-cell old"><span class="cmp-head-old">Cuaderno / Excel</span></div>
-        <div class="cmp-cell zen"><span class="cmp-head-zen"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="7" fill="#07A66B"/><path d="M7 10H25M25 10L7 22.5M7 22.5H25" stroke="#FAF8F2" stroke-width="3.2" stroke-linecap="round"/></svg>ZenPos</span></div>
+        <div class="cmp-cell zen"><span class="cmp-head-zen"><img src="LOGO-zenpos-WEBSF.svg" alt="ZenPos" style="height:60px;width:auto;display:inline-block;vertical-align:middle"></span></div>
       </div>
       <div class="cmp-row">
         <div class="cmp-cell feat-name">Cargar la factura del proveedor</div>
@@ -857,12 +1021,37 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
   </div>
 </section>
 
+<!-- ===================== MÉTRICAS ===================== -->
+<section class="sec metrics-section">
+  <div class="wrap">
+    <div class="sec-head centered fi">
+      <h2 class="h2">Números que hablan por sí solos</h2>
+      <p class="lead">ZenPos está transformando la forma en que los negocios venezolanos se organizan</p>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card fi d1">
+        <div class="number">2,500+</div>
+        <div class="label">Negocios activos<br>en Venezuela</div>
+      </div>
+      <div class="metric-card fi d2">
+        <div class="number">$8M+</div>
+        <div class="label">En ventas procesadas<br>cada mes</div>
+      </div>
+      <div class="metric-card fi d3">
+        <div class="number">98%</div>
+        <div class="label">De satisfacción<br>de usuarios</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== TESTIMONIO ===================== -->
 <section class="sec">
   <div class="wrap">
     <div class="sec-head centered fi">
       <h2 class="h2">Lo que dice quien ya usa ZenPos</h2>
     </div>
+    <div class="testimonials-grid">
     <div class="test-card fi d1">
       <div class="test-stars">★★★★★</div>
       <p class="test-q">"Antes anotaba todo en papel. Ahora con ZenPos registro cada servicio con el nombre del técnico, el carro y el trabajo hecho. Al cierre del día sé exactamente cuánto entró por método de pago y cuánto le toca a cada mecánico."</p>
@@ -871,11 +1060,36 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
         <div><div class="test-nm">Yorman Castillo</div><div class="test-tp">Electroauto Falcón C.A. · Repuestos automotores</div></div>
       </div>
     </div>
+    <div class="test-card fi d2">
+      <div class="test-stars">★★★★★</div>
+      <p class="test-q">"La función de recetas me revolucionó el negocio. Ahora defino el costo de cada empanada, arepa o sándwich automáticamente. Veo cuántas unidades puedo hacer con el stock que tengo y el sistema descuenta los ingredientes al vender. Es como tener un contador trabajando 24/7."</p>
+      <div class="test-by">
+        <div class="test-av">M</div>
+        <div><div class="test-nm">María González</div><div class="test-tp">Comidas Rápidas El Sabor · Panadería y comida</div></div>
+      </div>
+    </div>
+    <div class="test-card fi d3">
+      <div class="test-stars">★★★★★</div>
+      <p class="test-q">"Tengo una pequeña tienda y antes no sabía qué productos se me estaban acabando. Ahora ZenPos me avisa cuándo debo pedir stock, y el escáner de facturas me ahorra horas escribiendo lo que compro. En un mes me pagó solito."</p>
+      <div class="test-by">
+        <div class="test-av">C</div>
+        <div><div class="test-nm">Carlos Mendoza</div><div class="test-tp">Tienda La Esquina · Abasto y variedades</div></div>
+      </div>
+    </div>
+    <div class="test-card fi d4">
+      <div class="test-stars">★★★★★</div>
+      <p class="test-q">"Trabajo en una licorería y la función de cuenta abierta es increíble. Los clientes habituales compran a crédito, anotan en el cuaderno, y muchas veces se olvidaban de pagar. Ahora ZenPos controla todo y al final de la quincena cierro la cuenta. Sin pérdidas."</p>
+      <div class="test-by">
+        <div class="test-av">R</div>
+        <div><div class="test-nm">Roberto Silva</div><div class="test-tp">Licorería Los Amigos · Bebidas y licores</div></div>
+      </div>
+    </div>
+    </div>
   </div>
 </section>
 
 <!-- ===================== PRECIOS ===================== -->
-<section class="sec price-sec" id="precios">
+<section class="sec price-sec sec-light" id="precios">
   <div class="wrap">
     <div class="sec-head centered fi">
       <div class="eyebrow centered">Precios</div>
@@ -1002,12 +1216,25 @@ footer{background:#040E08;border-top:1px solid var(--border);padding:56px 0 32px
   </div>
 </section>
 
+<!-- ===================== BOTÓN FLOTANTE ===================== -->
+<a href="https://wa.me/584129840048?text=Hola%2C%20tengo%20una%20consulta%20sobre%20ZenPos" target="_blank" rel="noopener" class="float-cta" title="Contáctanos por WhatsApp">
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="Icons" stroke="none" stroke-width="1" fill-rule="evenodd">
+      <g id="Color-" transform="translate(-700.000000, -360.000000)" fill="#fff">
+        <path d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z"/>
+      </g>
+    </g>
+  </svg>
+</a>
+
 <!-- ===================== FOOTER ===================== -->
 <footer>
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <a class="brand" href="#top"><img src="zenpos-logo.png" alt="ZenPos" style="height:40px;width:auto;display:block"></a>
+        <a class="brand" href="#top">
+          <img src="LOGO-zenpos-WEBSF.svg" alt="ZenPos, producto de Zentrix Software" style="height:50px;width:auto;display:block">
+        </a>
         <p>El primer POS venezolano con inteligencia artificial. Bolívares, dólares y tasa BCV automática.</p>
         <p style="margin-top:10px;font-size:12.5px;color:var(--on-dark-fade)">ZenPos es un producto de <b style="color:var(--on-dark-mut)">Zentrix Software</b>, software venezolano para negocios que quieren crecer.</p>
       </div>
