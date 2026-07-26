@@ -271,7 +271,7 @@ html.js .fi:not(.in){opacity:0;transform:translateY(18px)}
           <a href="zenpos.html" class="btn btn-prim">Conocer ZenPos
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h8M7 3l4 4-4 4"/></svg>
           </a>
-          <a href="https://maroon.maxapex.net/apex/r/a266019/zenpos150/registro" target="_blank" rel="noopener" class="btn btn-ghost">Crear cuenta gratis</a>
+          <a href="https://maroon.maxapex.net/apex/r/a266019/zenpos150/registro?P10_SRC=home" target="_blank" rel="noopener" class="btn btn-ghost">Crear cuenta gratis</a>
         </div>
       </div>
 
@@ -421,6 +421,40 @@ revealAll();
 /* Failsafe DURO (leccion landing 2026-07-08: el reveal realza, NUNCA deja contenido oculto):
    pase lo que pase con el observer, tras 1.8s se revela todo .fi que quede oculto. */
 setTimeout(function(){ document.querySelectorAll('.fi:not(.in)').forEach(function(el){ el.classList.add('in'); }); }, 1800);
+</script>
+
+<!-- ═══ MEDICIÓN ═══════════════════════════════════════════════════════
+     PARA ACTIVAR: pon tu ID de píxel de Meta en PIXEL_ID (Business Manager
+     → Administrador de eventos → Orígenes de datos). Mientras esté vacío,
+     este bloque NO carga nada ni ralentiza la página.
+     ⚠️ IMPORTANTE: sin píxel, Meta optimiza tus anuncios por CLICS BARATOS,
+     no por gente que se registra. Con píxel aprende a buscarte clientes.
+     Lo mismo con CLARITY_ID (clarity.microsoft.com, gratis): graba la
+     pantalla de cada visita y muestra dónde se traban.                    -->
+<script>
+(function(){
+  var PIXEL_ID   = "";   /* <-- pega aquí el ID del píxel de Meta */
+  var CLARITY_ID = "";   /* <-- opcional: ID de Microsoft Clarity */
+
+  if(PIXEL_ID){
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", PIXEL_ID); fbq("track", "PageView");
+    /* cada clic en "Crear cuenta" = una conversión que Meta puede optimizar */
+    document.addEventListener("click", function(e){
+      var a = e.target.closest && e.target.closest("a[href*=registro]");
+      if(a) fbq("track", "CompleteRegistration", {content_name:"clic_crear_cuenta"});
+    });
+  }
+  if(CLARITY_ID){
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script",CLARITY_ID);
+  }
+}());
 </script>
 </body>
 </html>
